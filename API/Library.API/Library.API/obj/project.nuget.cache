@@ -1,0 +1,25 @@
+{
+  "version": 2,
+  "dgSpecHash": "BW6g+dLzNNM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Library.API.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.aspnetcore.authentication.jwtbearer\\8.0.17\\microsoft.aspnetcore.authentication.jwtbearer.8.0.17.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.extensions.apidescription.server\\6.0.5\\microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.extensions.dependencyinjection.abstractions\\8.0.0\\microsoft.extensions.dependencyinjection.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.extensions.logging.abstractions\\8.0.0\\microsoft.extensions.logging.abstractions.8.0.0.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.identitymodel.abstractions\\8.12.0\\microsoft.identitymodel.abstractions.8.12.0.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.identitymodel.jsonwebtokens\\8.12.0\\microsoft.identitymodel.jsonwebtokens.8.12.0.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.identitymodel.logging\\8.12.0\\microsoft.identitymodel.logging.8.12.0.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.identitymodel.protocols\\7.1.2\\microsoft.identitymodel.protocols.7.1.2.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.identitymodel.protocols.openidconnect\\7.1.2\\microsoft.identitymodel.protocols.openidconnect.7.1.2.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.identitymodel.tokens\\8.12.0\\microsoft.identitymodel.tokens.8.12.0.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\microsoft.openapi\\1.6.23\\microsoft.openapi.1.6.23.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\swashbuckle.aspnetcore\\8.1.4\\swashbuckle.aspnetcore.8.1.4.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\8.1.4\\swashbuckle.aspnetcore.swagger.8.1.4.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\8.1.4\\swashbuckle.aspnetcore.swaggergen.8.1.4.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\8.1.4\\swashbuckle.aspnetcore.swaggerui.8.1.4.nupkg.sha512",
+    "C:\\Users\\erolm\\.nuget\\packages\\system.identitymodel.tokens.jwt\\8.12.0\\system.identitymodel.tokens.jwt.8.12.0.nupkg.sha512"
+  ],
+  "logs": []
+}

@@ -1,0 +1,402 @@
+using Library.Client.WinForms.Models;
+using Microsoft.VisualBasic;
+using static System.Runtime.InteropServices.JavaScript.JSType;
+using System.Windows.Forms;
+
+namespace Library.Client.WinForms
+{
+    public partial class MainForm : Form
+    {
+        // HttpClient nesnesini uygulama boyunca tek bir kere oluþturup yeniden kullanmak en iyi pratiktir.
+        private static readonly HttpClient client = new HttpClient();
+        private static string? _jwtToken = null; // Giriþ yaptýktan sonra alýnacak JWT'yi saklamak için.
+
+        // API'nin temel adresini buraya yaz.
+        // Projeyi çalýþtýrdýðýnda API'nin hangi portta çalýþtýðýný kontrol et ve gerekirse güncelle.
+        private const string ApiBaseUrl = "https://localhost:7090/";
+
+        public MainForm()
+        {
+            InitializeComponent();
+        }
+
+        private void MainForm_Load(object sender, EventArgs e)
+        {
+            // HttpClient için temel ayarlarý yap
+            client.BaseAddress = new Uri(ApiBaseUrl);
+            client.DefaultRequestHeaders.Accept.Clear();
+            // API'miz hem JSON hem de XML ile konuþabildiði için ikisini de ekleyelim.
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/json"));
+            client.DefaultRequestHeaders.Accept.Add(new System.Net.Http.Headers.MediaTypeWithQualityHeaderValue("application/xml"));
+
+            // Baþlangýçta iþlem butonlarý pasif olsun, giriþ yapýnca aktifleþsin.
+            ToggleBookOperationControls(false);
+        }
+        private void ToggleBookOperationControls(bool isEnabled)
+        {
+            // Bu metot, kitap iþlemleriyle ilgili kontrollerin aktif/pasif durumunu ayarlar.
+            btnGetAllBooks.Enabled = isEnabled;
+            btnGetBookById.Enabled = isEnabled;
+            txtBookId.Enabled = isEnabled;
+            btnDeleteBook.Enabled = isEnabled;
+            btnHtmlReport.Enabled = isEnabled;
+            btnAddBook.Enabled = isEnabled;
+            btnUpdateBook.Enabled = isEnabled;
+            // ... Diðer Add/Update GroupBox'ýndaki kontroller ...
+            txtTitle.Enabled = isEnabled;
+            txtAuthor.Enabled = isEnabled;
+            txtIsbn.Enabled = isEnabled;
+            txtYear.Enabled = isEnabled;
+            txtGenre.Enabled = isEnabled;
+        }
+
+        private async void btnLogin_Click(object sender, EventArgs e)
+        {
+            string username = txtUsername.Text;
+            string password = txtPassword.Text;
+
+            if (string.IsNullOrEmpty(username) || string.IsNullOrEmpty(password))
+            {
+                MessageBox.Show("Please enter both username and password.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            var loginData = new { username, password };
+            var content = new StringContent(System.Text.Json.JsonSerializer.Serialize(loginData), System.Text.Encoding.UTF8, "application/json");
+
+            try
+            {
+                HttpResponseMessage response = await client.PostAsync("api/auth/login", content);
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string responseBody = await response.Content.ReadAsStringAsync();
+                    var tokenObject = System.Text.Json.JsonSerializer.Deserialize<System.Text.Json.JsonElement>(responseBody);
+                    _jwtToken = tokenObject.GetProperty("token").GetString();
+
+                    // HttpClient'ýn varsayýlan baþlýklarýna token'ý ekle
+                    client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", _jwtToken);
+
+                    // Arayüzü güncelle
+                    lblAuthStatus.Text = $"Status: Logged in as {username}";
+                    lblAuthStatus.ForeColor = Color.Green;
+                    MessageBox.Show("Login successful!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Ýþlem butonlarýný aktif hale getir
+                    ToggleBookOperationControls(true);
+                }
+                else
+                {
+                    lblAuthStatus.Text = "Status: Login Failed";
+                    lblAuthStatus.ForeColor = Color.Red;
+                    MessageBox.Show($"Login failed. Status: {response.ReasonPhrase}", "Login Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Connection Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void btnGetAllBooks_Click(object sender, EventArgs e)
+        {
+            // Giriþ yapýlýp yapýlmadýðýný kontrol et (_jwtToken dolu mu?)
+            if (string.IsNullOrEmpty(_jwtToken))
+            {
+                MessageBox.Show("You must be logged in to perform this action.", "Authentication Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                // API'nin /api/books endpoint'ine GET isteði gönder.
+                // Token'ý zaten HttpClient'ýn varsayýlan baþlýklarýna eklediðimiz için tekrar eklememize gerek yok.
+                HttpResponseMessage response = await client.GetAsync("api/books");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    // Gelen XML cevabýný string olarak al.
+                    string xmlContent = await response.Content.ReadAsStringAsync();
+
+                    // XML'i C# nesnelerine dönüþtür (Deserialization).
+                    var serializer = new System.Xml.Serialization.XmlSerializer(typeof(List<Book>), new System.Xml.Serialization.XmlRootAttribute("Books"));
+
+                    List<Book> books;
+                    using (var reader = new System.IO.StringReader(xmlContent))
+                    {
+                        // API'miz <Library><Books>... yapýsýnda döndüðü için bu kýsmý atlamamýz gerek.
+                        // Bunun yerine direkt gelen XML'i XDocument ile iþleyip Book listesine çevirelim.
+                        var doc = System.Xml.Linq.XDocument.Parse(xmlContent);
+                        books = doc.Descendants("Book").Select(b => new Book
+                        {
+                            Id = (int)b.Attribute("ID"),
+                            Title = b.Element("Title")?.Value,
+                            Author = b.Element("Author")?.Value,
+                            Isbn = b.Element("ISBN")?.Value,
+                            PublicationYear = (int)b.Element("PublicationYear"),
+                            Genre = b.Element("Genre")?.Value
+                        }).ToList();
+                    }
+
+                    // DataGridView'in veri kaynaðýný bu kitap listesi olarak ayarla.
+                    dgvBooks.DataSource = books;
+                    MessageBox.Show($"{books.Count} books loaded successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    // Eðer istek baþarýsýzsa (örn: token geçersizse, 401 hatasý)
+                    MessageBox.Show($"Failed to load books. Status: {response.ReasonPhrase}", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void btnGetBookById_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtBookId.Text, out int bookId))
+            {
+                MessageBox.Show("Please enter a valid numeric ID.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync($"api/books/{bookId}");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string xmlContent = await response.Content.ReadAsStringAsync();
+                    var doc = System.Xml.Linq.XDocument.Parse(xmlContent);
+
+                    string bookDetails = $"ID: {doc.Root.Attribute("ID")?.Value}\n" +
+                                         $"Title: {doc.Root.Element("Title")?.Value}\n" +
+                                         $"Author: {doc.Root.Element("Author")?.Value}\n" +
+                                         $"Year: {doc.Root.Element("PublicationYear")?.Value}";
+
+                    MessageBox.Show(bookDetails, "Book Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    MessageBox.Show($"Book with ID {bookId} was not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    MessageBox.Show($"Failed to get book. Status: {response.ReasonPhrase}", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void btnDeleteBook_Click(object sender, EventArgs e)
+        {
+            if (!int.TryParse(txtBookId.Text, out int bookId))
+            {
+                MessageBox.Show("Please enter a valid numeric ID.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Kullanýcýya onay sorusu soralým, bu iyi bir pratiktir.
+            var confirmation = MessageBox.Show($"Are you sure you want to delete the book with ID {bookId}?", "Confirm Deletion", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+
+            if (confirmation == DialogResult.No)
+            {
+                return;
+            }
+
+            try
+            {
+                HttpResponseMessage response = await client.DeleteAsync($"api/books/{bookId}");
+
+                if (response.IsSuccessStatusCode) // DELETE için 204 No Content döner
+                {
+                    MessageBox.Show($"Book with ID {bookId} has been deleted successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Tabloyu yenilemek için Get All Books butonunun click olayýný tekrar çaðýrabiliriz.
+                    // Bu, en kolay yenileme yöntemidir.
+                    btnGetAllBooks.PerformClick();
+                }
+                else if (response.StatusCode == System.Net.HttpStatusCode.NotFound)
+                {
+                    MessageBox.Show($"Book with ID {bookId} was not found.", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                }
+                else
+                {
+                    MessageBox.Show($"Failed to delete book. Status: {response.ReasonPhrase}", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void btnAddBook_Click(object sender, EventArgs e)
+        {
+            // Gerekli alanlarýn dolu olup olmadýðýný kontrol et
+            if (string.IsNullOrWhiteSpace(txtTitle.Text) || string.IsNullOrWhiteSpace(txtAuthor.Text))
+            {
+                MessageBox.Show("Title and Author are required fields.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Kullanýcýdan alýnan verilerle bir XML string'i oluþturalým.
+            // Bu, API'nin beklediði <Book> yapýsýyla eþleþmeli.
+            string bookXml = $@"
+        <Book>
+            <Title>{txtTitle.Text}</Title>
+            <Author>{txtAuthor.Text}</Author>
+            <ISBN>{txtIsbn.Text}</ISBN>
+            <PublicationYear>{txtYear.Text}</PublicationYear>
+            <Genre>{txtGenre.Text}</Genre>
+        </Book>";
+
+            // XML string'ini HTTP isteði için içeriðe dönüþtür.
+            var content = new StringContent(bookXml, System.Text.Encoding.UTF8, "application/xml");
+
+            try
+            {
+                HttpResponseMessage response = await client.PostAsync("api/books", content);
+
+                if (response.IsSuccessStatusCode) // POST için 201 Created döner
+                {
+                    MessageBox.Show("Book added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Alanlarý temizle ve tabloyu yenile
+                    ClearInputFields();
+                    btnGetAllBooks.PerformClick();
+                }
+                else
+                {
+                    // API'den gelen validasyon hatasý gibi detaylý hatalarý gösterelim.
+                    string errorContent = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Failed to add book. Status: {response.ReasonPhrase}\nDetails: {errorContent}", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        // Metin kutularýný temizlemek için yardýmcý bir metot
+        private void ClearInputFields()
+        {
+            txtTitle.Clear();
+            txtAuthor.Clear();
+            txtIsbn.Clear();
+            txtYear.Clear();
+            txtGenre.Clear();
+        }
+
+        private void dgvBooks_SelectionChanged(object sender, EventArgs e)
+        {
+            // Eðer seçili bir satýr varsa ve bu satýr bir kitaba aitse...
+            if (dgvBooks.SelectedRows.Count > 0 && dgvBooks.SelectedRows[0].DataBoundItem is Book selectedBook)
+            {
+                // Seçilen kitabýn bilgilerini metin kutularýna doldur.
+                txtTitle.Text = selectedBook.Title;
+                txtAuthor.Text = selectedBook.Author;
+                txtIsbn.Text = selectedBook.Isbn;
+                txtYear.Text = selectedBook.PublicationYear.ToString();
+                txtGenre.Text = selectedBook.Genre;
+
+                // Güncellenecek kitabýn ID'sini de bir yerde tutmak faydalý olur.
+                // txtBookId kutusunu bu amaçla kullanabiliriz.
+                txtBookId.Text = selectedBook.Id.ToString();
+            }
+        }
+
+        private async void btnUpdateBook_Click(object sender, EventArgs e)
+        {
+            // Güncellenecek kitabýn ID'sini al
+            if (!int.TryParse(txtBookId.Text, out int bookId))
+            {
+                MessageBox.Show("Please select a book from the list to update, or enter a valid ID in the 'Get Book by ID' box.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Gerekli alanlarýn dolu olup olmadýðýný kontrol et
+            if (string.IsNullOrWhiteSpace(txtTitle.Text) || string.IsNullOrWhiteSpace(txtAuthor.Text))
+            {
+                MessageBox.Show("Title and Author are required fields.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Metin kutularýndaki verilerle bir XML string'i oluþturalým.
+            string bookXml = $@"
+        <Book>
+            <Title>{txtTitle.Text}</Title>
+            <Author>{txtAuthor.Text}</Author>
+            <ISBN>{txtIsbn.Text}</ISBN>
+            <PublicationYear>{txtYear.Text}</PublicationYear>
+            <Genre>{txtGenre.Text}</Genre>
+        </Book>";
+
+            var content = new StringContent(bookXml, System.Text.Encoding.UTF8, "application/xml");
+
+            try
+            {
+                HttpResponseMessage response = await client.PutAsync($"api/books/{bookId}", content);
+
+                if (response.IsSuccessStatusCode) // PUT için 204 No Content döner
+                {
+                    MessageBox.Show("Book updated successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+                    // Alanlarý temizle ve tabloyu yenile
+                    ClearInputFields();
+                    txtBookId.Clear();
+                    btnGetAllBooks.PerformClick();
+                }
+                else
+                {
+                    string errorContent = await response.Content.ReadAsStringAsync();
+                    MessageBox.Show($"Failed to update book. Status: {response.ReasonPhrase}\nDetails: {errorContent}", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void btnHtmlReport_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                HttpResponseMessage response = await client.GetAsync("api/books/report");
+
+                if (response.IsSuccessStatusCode)
+                {
+                    string htmlContent = await response.Content.ReadAsStringAsync();
+
+                    // Gelen HTML'i geçici bir dosyaya yaz
+                    string filePath = System.IO.Path.Combine(System.IO.Path.GetTempPath(), "BookReport.html");
+                    await System.IO.File.WriteAllTextAsync(filePath, htmlContent);
+
+                    // Oluþturulan HTML dosyasýný varsayýlan tarayýcýda aç
+                    var processInfo = new System.Diagnostics.ProcessStartInfo(filePath)
+                    {
+                        UseShellExecute = true // Bu satýr .NET Core/.NET 5+ için gereklidir
+                    };
+                    System.Diagnostics.Process.Start(processInfo);
+
+                    MessageBox.Show("HTML report has been generated and opened in your browser.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+                else
+                {
+                    MessageBox.Show($"Failed to generate report. Status: {response.ReasonPhrase}", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+    }
+}

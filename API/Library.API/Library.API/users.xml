@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Users>
+  <User ID="1">
+    <Username>admin</Username>
+    <!-- Gerçek bir projede şifre ASLA böyle saklanmaz! Her zaman hash'lenir. -->
+    <!-- Bu sadece projenin basitliği için yapılmıştır. -->
+    <Password>12345</Password>
+    <Role>Admin</Role>
+  </User>
+  <User ID="2">
+    <Username>user1</Username>
+    <Password>abcde</Password>
+    <Role>Member</Role>
+  </User>
+</Users>

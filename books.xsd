@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <!-- Bu şema, "books.xml" dosyasının yapısını ve kurallarını tanımlar. -->
+
+  <!-- 1. Kök Element: <Library> -->
+  <xs:element name="Library">
+    <xs:complexType>
+      <xs:sequence>
+        <!-- Library içinde bir tane <Books> elementi olmalı -->
+        <xs:element name="Books">
+          <xs:complexType>
+            <xs:sequence>
+              <!-- Books içinde 0 veya daha fazla <Book> elementi olabilir -->
+              <xs:element name="Book" type="BookType" minOccurs="0" maxOccurs="unbounded" />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <!-- 2. "Book" Elementinin Tip Tanımı: BookType -->
+  <xs:complexType name="BookType">
+    <xs:sequence>
+      <!-- Bir kitabın içinde bu elementler bu sırayla bulunmak zorunda -->
+      <xs:element name="Title" type="xs:string" />
+      <xs:element name="Author" type="xs:string" />
+      <xs:element name="ISBN" type="xs:string" />
+      <xs:element name="PublicationYear" type="xs:gYear" /> <!-- Sadece yıl tipinde veri kabul eder -->
+      <xs:element name="Genre" type="xs:string" />
+    </xs:sequence>
+    <!-- Bir kitabın "ID" adında, tamsayı tipinde ve zorunlu bir niteliği (attribute) olmalı -->
+    <xs:attribute name="ID" type="xs:int" use="optional" />
+  </xs:complexType>
+
+</xs:schema>

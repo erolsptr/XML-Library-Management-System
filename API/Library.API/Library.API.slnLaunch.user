@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "Yeni Profil",
+    "Projects": [
+      {
+        "Path": "Library.API\\Library.API.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "..\\..\\Library.Client.WinForms\\Library.Client.WinForms.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]

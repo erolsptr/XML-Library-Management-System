@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!-- Bu dosya kütüphanedeki tüm kitapların verilerini tutar. -->
+<Library>
+  <Books>
+    <Book ID="1">
+      <Title>aaaa</Title>
+      <Author>saptır</Author>
+      <ISBN>5415416</ISBN>
+      <PublicationYear>2002</PublicationYear>
+      <Genre>komed</Genre>
+    </Book>
+    <Book ID="2">
+      <Title>aaaasdsad</Title>
+      <Author>sdasda</Author>
+      <ISBN>123</ISBN>
+      <PublicationYear>2002</PublicationYear>
+      <Genre>ilörhielö</Genre>
+    </Book>
+    <Book ID="3">
+      <Title>The Lord of the Rings</Title>
+      <Author>J.R.R. Tolkien</Author>
+      <ISBN>978-0618640157</ISBN>
+      <PublicationYear>1954</PublicationYear>
+      <Genre>Fantasy</Genre>
+    </Book>
+    <Book ID="4">
+      <Title>The Hitchhiker's Guide to the Galaxy</Title>
+      <Author>Douglas Adams</Author>
+      <ISBN>978-0345391803</ISBN>
+      <PublicationYear>1979</PublicationYear>
+      <Genre>Comedy Science Fiction</Genre>
+    </Book>
+    <Book ID="5">
+      <Title>meraba</Title>
+      <Author>erol</Author>
+      <ISBN>54541615</ISBN>
+      <PublicationYear>2002</PublicationYear>
+      <Genre>eerr</Genre>
+    </Book>
+  </Books>
+</Library>
