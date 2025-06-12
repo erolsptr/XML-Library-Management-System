@@ -3,10 +3,30 @@
   "WorkspaceRootPath": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{924F656A-8076-4B01-87CB-CA304DBC00DF}|..\\..\\Library.Client.WinForms\\Library.Client.WinForms.csproj|c:\\users\\erolm\\desktop\\libraryproject\\library.client.winforms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\controllers\\memberscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\models\\member.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{924F656A-8076-4B01-87CB-CA304DBC00DF}|..\\..\\Library.Client.WinForms\\Library.Client.WinForms.csproj|c:\\users\\erolm\\desktop\\libraryproject\\library.client.winforms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\members.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\members.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\members.dtd||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\members.dtd||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\library.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\library.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{924F656A-8076-4B01-87CB-CA304DBC00DF}|..\\..\\Library.Client.WinForms\\Library.Client.WinForms.csproj|c:\\users\\erolm\\desktop\\libraryproject\\library.client.winforms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{924F656A-8076-4B01-87CB-CA304DBC00DF}|..\\..\\Library.Client.WinForms\\Library.Client.WinForms.csproj|c:\\users\\erolm\\desktop\\libraryproject\\library.client.winforms\\mainform.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
@@ -26,10 +46,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\library.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
       "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\library.api.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\library.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\library.api.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
       "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\controllers\\bookscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -63,59 +79,88 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "BookList.cs",
-              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\BookList.cs",
-              "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Models\\BookList.cs",
-              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\BookList.cs",
-              "RelativeToolTip": "..\\..\\Library.Client.WinForms\\Models\\BookList.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "MembersController.cs",
+              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Controllers\\MembersController.cs",
+              "RelativeDocumentMoniker": "Library.API\\Controllers\\MembersController.cs",
+              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Controllers\\MembersController.cs",
+              "RelativeToolTip": "Library.API\\Controllers\\MembersController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:41:19.286Z"
+              "WhenOpened": "2025-06-12T13:58:48.448Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "Book.cs",
-              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\Book.cs",
-              "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Models\\Book.cs",
-              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\Book.cs",
-              "RelativeToolTip": "..\\..\\Library.Client.WinForms\\Models\\Book.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:40:36.094Z"
+              "Title": "members.dtd",
+              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\members.dtd",
+              "RelativeDocumentMoniker": "Library.API\\members.dtd",
+              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\members.dtd",
+              "RelativeToolTip": "Library.API\\members.dtd",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003572|",
+              "WhenOpened": "2025-06-12T13:53:38.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "members.xml",
+              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\members.xml",
+              "RelativeDocumentMoniker": "Library.API\\members.xml",
+              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\members.xml",
+              "RelativeToolTip": "Library.API\\members.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-06-12T13:52:28.653Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "MainForm.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.cs",
-              "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\MainForm.cs",
-              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.cs [Design]",
-              "RelativeToolTip": "..\\..\\Library.Client.WinForms\\MainForm.cs [Design]",
+              "Title": "Member.cs",
+              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\Member.cs",
+              "RelativeDocumentMoniker": "Library.API\\Models\\Member.cs",
+              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\Member.cs",
+              "RelativeToolTip": "Library.API\\Models\\Member.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:33:00.641Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2025-06-12T13:40:56.983Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
+              "Title": "MainForm.cs [Tasar\u0131m]",
+              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.cs",
+              "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\MainForm.cs",
+              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.cs [Tasar\u0131m]",
+              "RelativeToolTip": "..\\..\\Library.Client.WinForms\\MainForm.cs [Tasar\u0131m]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T01:33:00.641Z",
+              "EditorCaption": " [Tasar\u0131m]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\MainForm.Designer.cs",
               "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.Designer.cs",
               "RelativeToolTip": "..\\..\\Library.Client.WinForms\\MainForm.Designer.cs",
-              "ViewState": "AgIAAB8AAAAAAAAAAAAswGAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAAwGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T01:12:07.519Z"
+              "WhenOpened": "2025-06-12T01:12:07.519Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 10,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Program.cs",
@@ -127,20 +172,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\MainForm.cs",
               "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.cs",
               "RelativeToolTip": "..\\..\\Library.Client.WinForms\\MainForm.cs",
-              "ViewState": "AgIAAEoBAAAAAAAAAAAgwIABAABcAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAAADYAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-06-12T00:56:52.426Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Library.Client.WinForms.csproj",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Library.Client.WinForms.csproj",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Library.Client.WinForms.csproj",
@@ -148,22 +193,24 @@
               "RelativeToolTip": "..\\..\\Library.Client.WinForms\\Library.Client.WinForms.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-12T00:26:04.228Z"
+              "WhenOpened": "2025-06-12T00:26:04.228Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "Library.API",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Library.API.csproj",
               "RelativeDocumentMoniker": "Library.API\\Library.API.csproj",
               "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Library.API.csproj",
               "RelativeToolTip": "Library.API\\Library.API.csproj",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-12T00:25:57.655Z"
+              "WhenOpened": "2025-06-12T00:25:57.655Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Library.API\\Controllers\\AuthController.cs",
@@ -175,7 +222,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "UserDto.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\UserDto.cs",
               "RelativeDocumentMoniker": "Library.API\\Models\\UserDto.cs",
@@ -187,7 +234,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "UserLogin.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\UserLogin.cs",
               "RelativeDocumentMoniker": "Library.API\\Models\\UserLogin.cs",
@@ -199,7 +246,44 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 5,
+              "Title": "Library.API.csproj",
+              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Library.API.csproj",
+              "RelativeDocumentMoniker": "Library.API\\Library.API.csproj",
+              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Library.API.csproj*",
+              "RelativeToolTip": "Library.API\\Library.API.csproj*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-06-11T23:12:27.877Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Book.cs",
+              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\Book.cs",
+              "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Models\\Book.cs",
+              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\Book.cs",
+              "RelativeToolTip": "..\\..\\Library.Client.WinForms\\Models\\Book.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T01:40:36.094Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "BookList.cs",
+              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\BookList.cs",
+              "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Models\\BookList.cs",
+              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\BookList.cs",
+              "RelativeToolTip": "..\\..\\Library.Client.WinForms\\Models\\BookList.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-12T01:41:19.286Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Program.cs",
               "RelativeDocumentMoniker": "Library.API\\Program.cs",
@@ -211,7 +295,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "appsettings.json",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\appsettings.json",
               "RelativeDocumentMoniker": "Library.API\\appsettings.json",
@@ -223,19 +307,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Library.API.csproj",
-              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Library.API.csproj",
-              "RelativeDocumentMoniker": "Library.API\\Library.API.csproj",
-              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Library.API.csproj",
-              "RelativeToolTip": "Library.API\\Library.API.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-06-11T23:12:27.877Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "BooksController.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "Library.API\\Controllers\\BooksController.cs",

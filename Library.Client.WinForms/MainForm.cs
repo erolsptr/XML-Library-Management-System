@@ -34,20 +34,24 @@ namespace Library.Client.WinForms
         }
         private void ToggleBookOperationControls(bool isEnabled)
         {
-            // Bu metot, kitap iþlemleriyle ilgili kontrollerin aktif/pasif durumunu ayarlar.
+            // Bu metot, SADECE GÝRÝÞ GEREKTÝREN kontrollerin durumunu ayarlar.
+
             btnGetAllBooks.Enabled = isEnabled;
             btnGetBookById.Enabled = isEnabled;
             txtBookId.Enabled = isEnabled;
             btnDeleteBook.Enabled = isEnabled;
-            btnHtmlReport.Enabled = isEnabled;
+            btnHtmlReport.Enabled = isEnabled; // Rapor için de giriþ gereksin mi? Þimdilik evet.
+
+            // Ekleme ve Güncelleme kontrolleri
             btnAddBook.Enabled = isEnabled;
             btnUpdateBook.Enabled = isEnabled;
-            // ... Diðer Add/Update GroupBox'ýndaki kontroller ...
             txtTitle.Enabled = isEnabled;
             txtAuthor.Enabled = isEnabled;
-            txtIsbn.Enabled = isEnabled;
+            // txtIsbn.Enabled = isEnabled;  // <-- BU SATIRI SÝLDÝK/YORUM YAPTIK
             txtYear.Enabled = isEnabled;
             txtGenre.Enabled = isEnabled;
+
+            // Not: btnFetchBookDetails butonu bu listeye hiç eklenmemeli ki her zaman aktif kalsýn.
         }
 
         private async void btnLogin_Click(object sender, EventArgs e)
@@ -396,6 +400,78 @@ namespace Library.Client.WinForms
             catch (Exception ex)
             {
                 MessageBox.Show($"An error occurred: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+        }
+
+        private async void btnFetchBookDetails_Click(object sender, EventArgs e)
+        {
+            string isbn = txtIsbn.Text.Trim(); // Baþýndaki/sonundaki boþluklarý temizle
+            if (string.IsNullOrEmpty(isbn))
+            {
+                MessageBox.Show("Please enter an ISBN to fetch details.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                return;
+            }
+
+            // Open Library API'nin adresi
+            string apiUrl = $"https://openlibrary.org/api/books?bibkeys=ISBN:{isbn}&format=json&jscmd=data";
+
+            // Not: Open Library API ile konuþmak için yeni bir HttpClient kullanabiliriz
+            // veya mevcut olaný kullanabiliriz. Ayrý bir client kullanmak bazen daha temiz olabilir.
+            using (var externalApiClient = new HttpClient())
+            {
+                try
+                {
+                    // API'ye GET isteði gönder
+                    HttpResponseMessage response = await externalApiClient.GetAsync(apiUrl);
+
+                    if (response.IsSuccessStatusCode)
+                    {
+                        string jsonContent = await response.Content.ReadAsStringAsync();
+
+                        // ---- BU KISMI DEÐÝÞTÝRÝYORUZ ----
+                        // API, ISBN'e karþýlýk bir þey bulamazsa boþ bir JSON nesnesi "{}" döndürür.
+                        // Bunu metin olarak kontrol etmek en güvenilir yoldur.
+                        if (jsonContent.Trim() == "{}")
+                        {
+                            MessageBox.Show($"No book found for ISBN: {isbn}", "Not Found", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                            return;
+                        }
+
+                        // Gelen JSON'u ayrýþtýr.
+                        using (var jsonDoc = System.Text.Json.JsonDocument.Parse(jsonContent))
+                        {
+                            // JSON'un içindeki doðru yola ulaþalým: "ISBN:..." -> "title"
+                            var bookData = jsonDoc.RootElement.GetProperty($"ISBN:{isbn}");
+
+                            // Metin kutularýný dolduralým
+                            txtTitle.Text = bookData.TryGetProperty("title", out var title) ? title.GetString() : "";
+
+                            // Yazar bilgisi bir dizi (array) olarak gelebilir, ilkini alalým.
+                            if (bookData.TryGetProperty("authors", out var authors) && authors.GetArrayLength() > 0)
+                            {
+                                txtAuthor.Text = authors[0].TryGetProperty("name", out var authorName) ? authorName.GetString() : "";
+                            }
+                            else
+                            {
+                                txtAuthor.Text = ""; // Yazar bulunamadýysa kutuyu temizle
+                            }
+
+                            // Yayýn yýlý
+                            txtYear.Text = bookData.TryGetProperty("publish_date", out var publishDate) ? publishDate.GetString() : "";
+
+                            DialogResult dialogResult = MessageBox.Show("Book details fetched successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                        }
+                        // ---------------------------------
+                    }
+                    else
+                    {
+                        MessageBox.Show($"Failed to fetch data from Open Library. Status: {response.ReasonPhrase}", "API Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    }
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show($"An error occurred while fetching book details: {ex.Message}", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                }
             }
         }
     }

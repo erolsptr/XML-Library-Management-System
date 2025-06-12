@@ -19,3 +19,4 @@ C:\Users\erolm\Desktop\LibraryProject\Library.Client.WinForms\obj\Debug\net8.0-w
 C:\Users\erolm\Desktop\LibraryProject\Library.Client.WinForms\obj\Debug\net8.0-windows\Library.Client.WinForms.pdb
 C:\Users\erolm\Desktop\LibraryProject\Library.Client.WinForms\obj\Debug\net8.0-windows\Library.Client.WinForms.genruntimeconfig.cache
 C:\Users\erolm\Desktop\LibraryProject\Library.Client.WinForms\obj\Debug\net8.0-windows\ref\Library.Client.WinForms.dll
+C:\Users\erolm\Desktop\LibraryProject\Library.Client.WinForms\obj\Debug\net8.0-windows\Library.Client.WinForms.sourcelink.json

@@ -37,5 +37,12 @@
       <PublicationYear>2002</PublicationYear>
       <Genre>eerr</Genre>
     </Book>
+    <Book ID="6">
+      <Title>The Lord of the Rings</Title>
+      <Author>J.R.R. Tolkien</Author>
+      <ISBN>9780618640157</ISBN>
+      <PublicationYear>2005</PublicationYear>
+      <Genre></Genre>
+    </Book>
   </Books>
 </Library>

@@ -43,6 +43,7 @@
             txtBookId = new TextBox();
             dgvBooks = new DataGridView();
             groupBox3 = new GroupBox();
+            btnFetchBookDetails = new Button();
             btnUpdateBook = new Button();
             btnAddBook = new Button();
             txtGenre = new TextBox();
@@ -203,6 +204,7 @@
             // 
             // groupBox3
             // 
+            groupBox3.Controls.Add(btnFetchBookDetails);
             groupBox3.Controls.Add(btnUpdateBook);
             groupBox3.Controls.Add(btnAddBook);
             groupBox3.Controls.Add(txtGenre);
@@ -221,6 +223,16 @@
             groupBox3.TabIndex = 3;
             groupBox3.TabStop = false;
             groupBox3.Text = "Add / Update Book";
+            // 
+            // btnFetchBookDetails
+            // 
+            btnFetchBookDetails.Location = new Point(205, 85);
+            btnFetchBookDetails.Name = "btnFetchBookDetails";
+            btnFetchBookDetails.Size = new Size(135, 23);
+            btnFetchBookDetails.TabIndex = 14;
+            btnFetchBookDetails.Text = "Fetch Details by ISBN";
+            btnFetchBookDetails.UseVisualStyleBackColor = true;
+            btnFetchBookDetails.Click += btnFetchBookDetails_Click;
             // 
             // btnUpdateBook
             // 
@@ -310,7 +322,6 @@
             // 
             txtTitle.Location = new Point(84, 32);
             txtTitle.Name = "txtTitle";
-            txtTitle.PasswordChar = ' ';
             txtTitle.Size = new Size(100, 23);
             txtTitle.TabIndex = 1;
             // 
@@ -376,5 +387,6 @@
         private Button btnGetAllBooks;
         private Button btnUpdateBook;
         private Button btnAddBook;
+        private Button btnFetchBookDetails;
     }
 }
