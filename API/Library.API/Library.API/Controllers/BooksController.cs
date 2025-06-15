@@ -8,6 +8,7 @@ using System.Xml.XPath;
 using System.Xml.Xsl; // LINQ to XML için bu kütüphaneyi ekliyoruz.
 using Microsoft.AspNetCore.Authorization;
 
+
 namespace Library.API.Controllers
 {
     [Route("api/[controller]")]
@@ -301,6 +302,55 @@ namespace Library.API.Controllers
             catch (Exception ex)
             {
                 return StatusCode(500, $"An error occurred during XSLT transformation: {ex.ToString()}");
+            }
+        }
+        // GET: api/v1/books/search?term=Dune
+        // GET: api/v1/books/search?term=Dune
+        [HttpGet("search")]
+        public ActionResult<IEnumerable<Book>> SearchBooks([FromQuery] string term)
+        {
+            if (string.IsNullOrWhiteSpace(term))
+            {
+                return BadRequest("Search term cannot be empty.");
+            }
+
+            var foundBooks = new List<Book>();
+
+            try
+            {
+                using (XmlReader reader = XmlReader.Create("books.xml"))
+                {
+                    while (reader.Read())
+                    {
+                        if (reader.NodeType == XmlNodeType.Element && reader.Name == "Book")
+                        {
+                            XElement bookElement = XNode.ReadFrom(reader) as XElement;
+                            if (bookElement != null)
+                            {
+                                string title = bookElement.Element("Title")?.Value;
+
+                                if (title != null && title.IndexOf(term, StringComparison.OrdinalIgnoreCase) >= 0)
+                                {
+                                    var book = new Book
+                                    {
+                                        Id = (int)bookElement.Attribute("ID"),
+                                        Title = title,
+                                        Author = bookElement.Element("Author")?.Value,
+                                        Isbn = bookElement.Element("ISBN")?.Value,
+                                        PublicationYear = int.TryParse(bookElement.Element("PublicationYear")?.Value, out int year) ? year : 0,
+                                        Genre = bookElement.Element("Genre")?.Value
+                                    };
+                                    foundBooks.Add(book);
+                                }
+                            }
+                        }
+                    }
+                }
+                return Ok(foundBooks);
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, $"An error occurred during search: {ex.Message}");
             }
         }
     }

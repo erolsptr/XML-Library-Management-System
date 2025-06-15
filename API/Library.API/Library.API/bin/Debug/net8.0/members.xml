@@ -1,17 +1,23 @@
-﻿<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE LibraryMembers SYSTEM "members.dtd">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE LibraryMembers SYSTEM "members.dtd"[]>
 <!-- Bu dosya kütüphane üyelerinin bilgilerini tutar. -->
 <LibraryMembers>
-	<Member ID="101">
-		<FirstName>Alice</FirstName>
-		<LastName>Wonderland</LastName>
-		<MembershipDate>2023-01-15</MembershipDate>
-		<Email>alice@example.com</Email>
-	</Member>
-	<Member ID="102">
-		<FirstName>Bob</FirstName>
-		<LastName>Builder</LastName>
-		<MembershipDate>2023-02-20</MembershipDate>
-		<Email>bob@example.com</Email>
-	</Member>
+  <Member ID="101">
+    <FirstName>Alice</FirstName>
+    <LastName>Wonderland</LastName>
+    <MembershipDate>2023-01-15</MembershipDate>
+    <Email>alice@example.com</Email>
+  </Member>
+  <Member ID="102">
+    <FirstName>Bob</FirstName>
+    <LastName>Builder</LastName>
+    <MembershipDate>2023-02-20</MembershipDate>
+    <Email>bob@example.com</Email>
+  </Member>
+  <Member ID="103">
+    <FirstName>erol</FirstName>
+    <LastName>saptir</LastName>
+    <MembershipDate>2025-06-15</MembershipDate>
+    <Email>wlşegmw@gmail.com</Email>
+  </Member>
 </LibraryMembers>

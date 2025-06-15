@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LibraryLoans>
+  <!-- Başlangıçta boş olabilir veya örnek bir kayıt ekleyebiliriz -->
+  <Loan LoanID="1001">
+    <BookID>1</BookID>
+    <MemberID>101</MemberID>
+    <LoanDate>2025-05-20</LoanDate>
+    <ReturnDate>2025-06-15</ReturnDate>
+    <!-- Kitap geri dönmediği için boş -->
+  </Loan>
+  <Loan LoanID="1002">
+    <BookID>101</BookID>
+    <MemberID>1</MemberID>
+    <LoanDate>2025-06-15</LoanDate>
+    <ReturnDate>2025-06-15</ReturnDate>
+  </Loan>
+  <Loan LoanID="1003">
+    <BookID>100</BookID>
+    <MemberID>656556</MemberID>
+    <LoanDate>2025-06-15</LoanDate>
+    <ReturnDate>2025-06-15</ReturnDate>
+  </Loan>
+  <Loan LoanID="1004">
+    <BookID>99</BookID>
+    <MemberID>103</MemberID>
+    <LoanDate>2025-06-15</LoanDate>
+    <ReturnDate>2025-06-15</ReturnDate>
+  </Loan>
+  <Loan LoanID="1005">
+    <BookID>101</BookID>
+    <MemberID>103</MemberID>
+    <LoanDate>2025-06-15</LoanDate>
+    <ReturnDate>2025-06-15</ReturnDate>
+  </Loan>
+</LibraryLoans>

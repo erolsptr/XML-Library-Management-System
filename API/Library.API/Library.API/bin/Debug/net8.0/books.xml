@@ -3,46 +3,711 @@
 <Library>
   <Books>
     <Book ID="1">
-      <Title>aaaa</Title>
-      <Author>saptır</Author>
-      <ISBN>5415416</ISBN>
-      <PublicationYear>2002</PublicationYear>
-      <Genre>komed</Genre>
+      <Title>Dune</Title>
+      <Author>Frank Herbert</Author>
+      <ISBN>9780441013593</ISBN>
+      <PublicationYear>1965</PublicationYear>
+      <Genre>Science Fiction</Genre>
     </Book>
     <Book ID="2">
-      <Title>aaaasdsad</Title>
-      <Author>sdasda</Author>
-      <ISBN>123</ISBN>
-      <PublicationYear>2002</PublicationYear>
-      <Genre>ilörhielö</Genre>
+      <Title>1984</Title>
+      <Author>George Orwell</Author>
+      <ISBN>9780451524935</ISBN>
+      <PublicationYear>1949</PublicationYear>
+      <Genre>Dystopian</Genre>
     </Book>
     <Book ID="3">
       <Title>The Lord of the Rings</Title>
       <Author>J.R.R. Tolkien</Author>
-      <ISBN>978-0618640157</ISBN>
+      <ISBN>9780618640157</ISBN>
       <PublicationYear>1954</PublicationYear>
       <Genre>Fantasy</Genre>
     </Book>
     <Book ID="4">
       <Title>The Hitchhiker's Guide to the Galaxy</Title>
       <Author>Douglas Adams</Author>
-      <ISBN>978-0345391803</ISBN>
+      <ISBN>9780345391803</ISBN>
       <PublicationYear>1979</PublicationYear>
-      <Genre>Comedy Science Fiction</Genre>
+      <Genre>Sci-Fi Comedy</Genre>
     </Book>
     <Book ID="5">
-      <Title>meraba</Title>
-      <Author>erol</Author>
-      <ISBN>54541615</ISBN>
-      <PublicationYear>2002</PublicationYear>
-      <Genre>eerr</Genre>
+      <Title>Fahrenheit 451</Title>
+      <Author>Ray Bradbury</Author>
+      <ISBN>9781451673319</ISBN>
+      <PublicationYear>1953</PublicationYear>
+      <Genre>Dystopian</Genre>
     </Book>
     <Book ID="6">
-      <Title>The Lord of the Rings</Title>
+      <Title>To Kill a Mockingbird</Title>
+      <Author>Harper Lee</Author>
+      <ISBN>9780061120084</ISBN>
+      <PublicationYear>1960</PublicationYear>
+      <Genre>Classic</Genre>
+    </Book>
+    <Book ID="7">
+      <Title>The Catcher in the Rye</Title>
+      <Author>J.D. Salinger</Author>
+      <ISBN>9780316769488</ISBN>
+      <PublicationYear>1951</PublicationYear>
+      <Genre>Classic</Genre>
+    </Book>
+    <Book ID="8">
+      <Title>Brave New World</Title>
+      <Author>Aldous Huxley</Author>
+      <ISBN>9780060850524</ISBN>
+      <PublicationYear>1932</PublicationYear>
+      <Genre>Dystopian</Genre>
+    </Book>
+    <Book ID="9">
+      <Title>Pride and Prejudice</Title>
+      <Author>Jane Austen</Author>
+      <ISBN>9780141439518</ISBN>
+      <PublicationYear>1813</PublicationYear>
+      <Genre>Romance</Genre>
+    </Book>
+    <Book ID="10">
+      <Title>The Great Gatsby</Title>
+      <Author>F. Scott Fitzgerald</Author>
+      <ISBN>9780743273565</ISBN>
+      <PublicationYear>1925</PublicationYear>
+      <Genre>Classic</Genre>
+    </Book>
+    <Book ID="11">
+      <Title>Moby Dick</Title>
+      <Author>Herman Melville</Author>
+      <ISBN>9781503280786</ISBN>
+      <PublicationYear>1851</PublicationYear>
+      <Genre>Adventure</Genre>
+    </Book>
+    <Book ID="12">
+      <Title>War and Peace</Title>
+      <Author>Leo Tolstoy</Author>
+      <ISBN>9781420959958</ISBN>
+      <PublicationYear>1869</PublicationYear>
+      <Genre>Historical Fiction</Genre>
+    </Book>
+    <Book ID="13">
+      <Title>Hamlet</Title>
+      <Author>William Shakespeare</Author>
+      <ISBN>9780743477123</ISBN>
+      <PublicationYear>1603</PublicationYear>
+      <Genre>Tragedy</Genre>
+    </Book>
+    <Book ID="14">
+      <Title>The Odyssey</Title>
+      <Author>Homer</Author>
+      <ISBN>9780140268867</ISBN>
+      <PublicationYear>-800</PublicationYear>
+      <Genre>Epic Poetry</Genre>
+    </Book>
+    <Book ID="15">
+      <Title>Crime and Punishment</Title>
+      <Author>Fyodor Dostoevsky</Author>
+      <ISBN>9780140449136</ISBN>
+      <PublicationYear>1866</PublicationYear>
+      <Genre>Philosophical Fiction</Genre>
+    </Book>
+    <Book ID="16">
+      <Title>The Hobbit</Title>
       <Author>J.R.R. Tolkien</Author>
-      <ISBN>9780618640157</ISBN>
+      <ISBN>9780547928227</ISBN>
+      <PublicationYear>1937</PublicationYear>
+      <Genre>Fantasy</Genre>
+    </Book>
+    <Book ID="17">
+      <Title>Alice's Adventures in Wonderland</Title>
+      <Author>Lewis Carroll</Author>
+      <ISBN>9780141439761</ISBN>
+      <PublicationYear>1865</PublicationYear>
+      <Genre>Fantasy</Genre>
+    </Book>
+    <Book ID="18">
+      <Title>The Shining</Title>
+      <Author>Stephen King</Author>
+      <ISBN>9780385121675</ISBN>
+      <PublicationYear>1977</PublicationYear>
+      <Genre>Horror</Genre>
+    </Book>
+    <Book ID="19">
+      <Title>Don Quixote</Title>
+      <Author>Miguel de Cervantes</Author>
+      <ISBN>9780060934347</ISBN>
+      <PublicationYear>1605</PublicationYear>
+      <Genre>Satire</Genre>
+    </Book>
+    <Book ID="20">
+      <Title>The Alchemist</Title>
+      <Author>Paulo Coelho</Author>
+      <ISBN>9780062315007</ISBN>
+      <PublicationYear>1988</PublicationYear>
+      <Genre>Fantasy</Genre>
+    </Book>
+    <Book ID="21">
+      <Title>One Hundred Years of Solitude</Title>
+      <Author>Gabriel Garcia Marquez</Author>
+      <ISBN>9780060883287</ISBN>
+      <PublicationYear>1967</PublicationYear>
+      <Genre>Magical Realism</Genre>
+    </Book>
+    <Book ID="22">
+      <Title>The Picture of Dorian Gray</Title>
+      <Author>Oscar Wilde</Author>
+      <ISBN>9780141442464</ISBN>
+      <PublicationYear>1890</PublicationYear>
+      <Genre>Gothic Fiction</Genre>
+    </Book>
+    <Book ID="23">
+      <Title>Frankenstein</Title>
+      <Author>Mary Shelley</Author>
+      <ISBN>9780486282114</ISBN>
+      <PublicationYear>1818</PublicationYear>
+      <Genre>Gothic Fiction</Genre>
+    </Book>
+    <Book ID="24">
+      <Title>The Adventures of Huckleberry Finn</Title>
+      <Author>Mark Twain</Author>
+      <ISBN>9780486280615</ISBN>
+      <PublicationYear>1884</PublicationYear>
+      <Genre>Adventure</Genre>
+    </Book>
+    <Book ID="25">
+      <Title>Anna Karenina</Title>
+      <Author>Leo Tolstoy</Author>
+      <ISBN>9780143035008</ISBN>
+      <PublicationYear>1877</PublicationYear>
+      <Genre>Realist Novel</Genre>
+    </Book>
+    <Book ID="26">
+      <Title>The Grapes of Wrath</Title>
+      <Author>John Steinbeck</Author>
+      <ISBN>9780143039433</ISBN>
+      <PublicationYear>1939</PublicationYear>
+      <Genre>Social Novel</Genre>
+    </Book>
+    <Book ID="27">
+      <Title>Wuthering Heights</Title>
+      <Author>Emily Brontë</Author>
+      <ISBN>9780141439556</ISBN>
+      <PublicationYear>1847</PublicationYear>
+      <Genre>Gothic Fiction</Genre>
+    </Book>
+    <Book ID="28">
+      <Title>Jane Eyre</Title>
+      <Author>Charlotte Brontë</Author>
+      <ISBN>9780141441146</ISBN>
+      <PublicationYear>1847</PublicationYear>
+      <Genre>Gothic Fiction</Genre>
+    </Book>
+    <Book ID="29">
+      <Title>A Tale of Two Cities</Title>
+      <Author>Charles Dickens</Author>
+      <ISBN>9780141439600</ISBN>
+      <PublicationYear>1859</PublicationYear>
+      <Genre>Historical Fiction</Genre>
+    </Book>
+    <Book ID="30">
+      <Title>The Stand</Title>
+      <Author>Stephen King</Author>
+      <ISBN>9780385199572</ISBN>
+      <PublicationYear>1978</PublicationYear>
+      <Genre>Post-Apocalyptic</Genre>
+    </Book>
+    <Book ID="31">
+      <Title>Dracula</Title>
+      <Author>Bram Stoker</Author>
+      <ISBN>9780486411095</ISBN>
+      <PublicationYear>1897</PublicationYear>
+      <Genre>Gothic Horror</Genre>
+    </Book>
+    <Book ID="32">
+      <Title>The Chronicles of Narnia</Title>
+      <Author>C.S. Lewis</Author>
+      <ISBN>9780066238500</ISBN>
+      <PublicationYear>1950</PublicationYear>
+      <Genre>Fantasy</Genre>
+    </Book>
+    <Book ID="33">
+      <Title>A Game of Thrones</Title>
+      <Author>George R.R. Martin</Author>
+      <ISBN>9780553593716</ISBN>
+      <PublicationYear>1996</PublicationYear>
+      <Genre>Epic Fantasy</Genre>
+    </Book>
+    <Book ID="34">
+      <Title>The Name of the Wind</Title>
+      <Author>Patrick Rothfuss</Author>
+      <ISBN>9780756404741</ISBN>
+      <PublicationYear>2007</PublicationYear>
+      <Genre>Fantasy</Genre>
+    </Book>
+    <Book ID="35">
+      <Title>American Gods</Title>
+      <Author>Neil Gaiman</Author>
+      <ISBN>9780380789030</ISBN>
+      <PublicationYear>2001</PublicationYear>
+      <Genre>Fantasy</Genre>
+    </Book>
+    <Book ID="36">
+      <Title>Sapiens: A Brief History of Humankind</Title>
+      <Author>Yuval Noah Harari</Author>
+      <ISBN>9780062316097</ISBN>
+      <PublicationYear>2011</PublicationYear>
+      <Genre>Non-Fiction</Genre>
+    </Book>
+    <Book ID="37">
+      <Title>The Martian</Title>
+      <Author>Andy Weir</Author>
+      <ISBN>9780804139021</ISBN>
+      <PublicationYear>2011</PublicationYear>
+      <Genre>Science Fiction</Genre>
+    </Book>
+    <Book ID="38">
+      <Title>Project Hail Mary</Title>
+      <Author>Andy Weir</Author>
+      <ISBN>9780593135204</ISBN>
+      <PublicationYear>2021</PublicationYear>
+      <Genre>Science Fiction</Genre>
+    </Book>
+    <Book ID="39">
+      <Title>The Handmaid's Tale</Title>
+      <Author>Margaret Atwood</Author>
+      <ISBN>9780385490818</ISBN>
+      <PublicationYear>1985</PublicationYear>
+      <Genre>Dystopian</Genre>
+    </Book>
+    <Book ID="40">
+      <Title>The Hunger Games</Title>
+      <Author>Suzanne Collins</Author>
+      <ISBN>9780439023528</ISBN>
+      <PublicationYear>2008</PublicationYear>
+      <Genre>Dystopian</Genre>
+    </Book>
+    <Book ID="41">
+      <Title>The Road</Title>
+      <Author>Cormac McCarthy</Author>
+      <ISBN>9780307387899</ISBN>
+      <PublicationYear>2006</PublicationYear>
+      <Genre>Post-Apocalyptic</Genre>
+    </Book>
+    <Book ID="42">
+      <Title>Slaughterhouse-Five</Title>
+      <Author>Kurt Vonnegut</Author>
+      <ISBN>9780385333849</ISBN>
+      <PublicationYear>1969</PublicationYear>
+      <Genre>Satire</Genre>
+    </Book>
+    <Book ID="43">
+      <Title>The Color Purple</Title>
+      <Author>Alice Walker</Author>
+      <ISBN>9780156028356</ISBN>
+      <PublicationYear>1982</PublicationYear>
+      <Genre>Historical Fiction</Genre>
+    </Book>
+    <Book ID="44">
+      <Title>Beloved</Title>
+      <Author>Toni Morrison</Author>
+      <ISBN>9781400033416</ISBN>
+      <PublicationYear>1987</PublicationYear>
+      <Genre>Magical Realism</Genre>
+    </Book>
+    <Book ID="45">
+      <Title>The Old Man and the Sea</Title>
+      <Author>Ernest Hemingway</Author>
+      <ISBN>9780684801223</ISBN>
+      <PublicationYear>1952</PublicationYear>
+      <Genre>Novella</Genre>
+    </Book>
+    <Book ID="46">
+      <Title>The Stranger</Title>
+      <Author>Albert Camus</Author>
+      <ISBN>9780679720218</ISBN>
+      <PublicationYear>1942</PublicationYear>
+      <Genre>Absurdist Fiction</Genre>
+    </Book>
+    <Book ID="47">
+      <Title>The Sun Also Rises</Title>
+      <Author>Ernest Hemingway</Author>
+      <ISBN>9780743297332</ISBN>
+      <PublicationYear>1926</PublicationYear>
+      <Genre>Modernist</Genre>
+    </Book>
+    <Book ID="48">
+      <Title>Lord of the Flies</Title>
+      <Author>William Golding</Author>
+      <ISBN>9780399501487</ISBN>
+      <PublicationYear>1954</PublicationYear>
+      <Genre>Allegorical Novel</Genre>
+    </Book>
+    <Book ID="49">
+      <Title>Of Mice and Men</Title>
+      <Author>John Steinbeck</Author>
+      <ISBN>9780140177398</ISBN>
+      <PublicationYear>1937</PublicationYear>
+      <Genre>Novella</Genre>
+    </Book>
+    <Book ID="50">
+      <Title>East of Eden</Title>
+      <Author>John Steinbeck</Author>
+      <ISBN>9780142000656</ISBN>
+      <PublicationYear>1952</PublicationYear>
+      <Genre>Classic</Genre>
+    </Book>
+    <Book ID="51">
+      <Title>The Brothers Karamazov</Title>
+      <Author>Fyodor Dostoevsky</Author>
+      <ISBN>9780374528379</ISBN>
+      <PublicationYear>1880</PublicationYear>
+      <Genre>Philosophical Novel</Genre>
+    </Book>
+    <Book ID="52">
+      <Title>Ulysses</Title>
+      <Author>James Joyce</Author>
+      <ISBN>9780679722762</ISBN>
+      <PublicationYear>1922</PublicationYear>
+      <Genre>Modernist</Genre>
+    </Book>
+    <Book ID="53">
+      <Title>The Sound and the Fury</Title>
+      <Author>William Faulkner</Author>
+      <ISBN>9780679732242</ISBN>
+      <PublicationYear>1929</PublicationYear>
+      <Genre>Modernist</Genre>
+    </Book>
+    <Book ID="54">
+      <Title>As I Lay Dying</Title>
+      <Author>William Faulkner</Author>
+      <ISBN>9780679732259</ISBN>
+      <PublicationYear>1930</PublicationYear>
+      <Genre>Modernist</Genre>
+    </Book>
+    <Book ID="55">
+      <Title>Catch-22</Title>
+      <Author>Joseph Heller</Author>
+      <ISBN>9781451626657</ISBN>
+      <PublicationYear>1961</PublicationYear>
+      <Genre>Satire</Genre>
+    </Book>
+    <Book ID="56">
+      <Title>Infinite Jest</Title>
+      <Author>David Foster Wallace</Author>
+      <ISBN>9780316066525</ISBN>
+      <PublicationYear>1996</PublicationYear>
+      <Genre>Postmodern</Genre>
+    </Book>
+    <Book ID="57">
+      <Title>Blood Meridian</Title>
+      <Author>Cormac McCarthy</Author>
+      <ISBN>9780679728757</ISBN>
+      <PublicationYear>1985</PublicationYear>
+      <Genre>Western</Genre>
+    </Book>
+    <Book ID="58">
+      <Title>The Count of Monte Cristo</Title>
+      <Author>Alexandre Dumas</Author>
+      <ISBN>9780140449266</ISBN>
+      <PublicationYear>1844</PublicationYear>
+      <Genre>Adventure</Genre>
+    </Book>
+    <Book ID="59">
+      <Title>Les Misérables</Title>
+      <Author>Victor Hugo</Author>
+      <ISBN>9780451525260</ISBN>
+      <PublicationYear>1862</PublicationYear>
+      <Genre>Historical Fiction</Genre>
+    </Book>
+    <Book ID="60">
+      <Title>The Three Musketeers</Title>
+      <Author>Alexandre Dumas</Author>
+      <ISBN>9780199538462</ISBN>
+      <PublicationYear>1844</PublicationYear>
+      <Genre>Adventure</Genre>
+    </Book>
+    <Book ID="61">
+      <Title>Gone with the Wind</Title>
+      <Author>Margaret Mitchell</Author>
+      <ISBN>9781451635621</ISBN>
+      <PublicationYear>1936</PublicationYear>
+      <Genre>Historical Fiction</Genre>
+    </Book>
+    <Book ID="62">
+      <Title>The Secret History</Title>
+      <Author>Donna Tartt</Author>
+      <ISBN>9780679732266</ISBN>
+      <PublicationYear>1992</PublicationYear>
+      <Genre>Mystery</Genre>
+    </Book>
+    <Book ID="63">
+      <Title>The Goldfinch</Title>
+      <Author>Donna Tartt</Author>
+      <ISBN>9780316055437</ISBN>
+      <PublicationYear>2013</PublicationYear>
+      <Genre>Literary Fiction</Genre>
+    </Book>
+    <Book ID="64">
+      <Title>A Little Life</Title>
+      <Author>Hanya Yanagihara</Author>
+      <ISBN>9780804172707</ISBN>
+      <PublicationYear>2015</PublicationYear>
+      <Genre>Literary Fiction</Genre>
+    </Book>
+    <Book ID="65">
+      <Title>The Kite Runner</Title>
+      <Author>Khaled Hosseini</Author>
+      <ISBN>9781594631931</ISBN>
+      <PublicationYear>2003</PublicationYear>
+      <Genre>Historical Fiction</Genre>
+    </Book>
+    <Book ID="66">
+      <Title>A Thousand Splendid Suns</Title>
+      <Author>Khaled Hosseini</Author>
+      <ISBN>9781594489501</ISBN>
+      <PublicationYear>2007</PublicationYear>
+      <Genre>Historical Fiction</Genre>
+    </Book>
+    <Book ID="67">
+      <Title>The Book Thief</Title>
+      <Author>Markus Zusak</Author>
+      <ISBN>9780375842207</ISBN>
       <PublicationYear>2005</PublicationYear>
-      <Genre></Genre>
+      <Genre>Historical Fiction</Genre>
+    </Book>
+    <Book ID="68">
+      <Title>All the Light We Cannot See</Title>
+      <Author>Anthony Doerr</Author>
+      <ISBN>9781501173219</ISBN>
+      <PublicationYear>2014</PublicationYear>
+      <Genre>Historical Fiction</Genre>
+    </Book>
+    <Book ID="69">
+      <Title>Where the Crawdads Sing</Title>
+      <Author>Delia Owens</Author>
+      <ISBN>9780735219090</ISBN>
+      <PublicationYear>2018</PublicationYear>
+      <Genre>Mystery</Genre>
+    </Book>
+    <Book ID="70">
+      <Title>Circe</Title>
+      <Author>Madeline Miller</Author>
+      <ISBN>9780316556347</ISBN>
+      <PublicationYear>2018</PublicationYear>
+      <Genre>Fantasy</Genre>
+    </Book>
+    <Book ID="71">
+      <Title>The Song of Achilles</Title>
+      <Author>Madeline Miller</Author>
+      <ISBN>9780062060624</ISBN>
+      <PublicationYear>2011</PublicationYear>
+      <Genre>Historical Fiction</Genre>
+    </Book>
+    <Book ID="72">
+      <Title>Educated</Title>
+      <Author>Tara Westover</Author>
+      <ISBN>9780399590504</ISBN>
+      <PublicationYear>2018</PublicationYear>
+      <Genre>Memoir</Genre>
+    </Book>
+    <Book ID="73">
+      <Title>Becoming</Title>
+      <Author>Michelle Obama</Author>
+      <ISBN>9781524763138</ISBN>
+      <PublicationYear>2018</PublicationYear>
+      <Genre>Memoir</Genre>
+    </Book>
+    <Book ID="74">
+      <Title>The Silent Patient</Title>
+      <Author>Alex Michaelides</Author>
+      <ISBN>9781250301697</ISBN>
+      <PublicationYear>2019</PublicationYear>
+      <Genre>Thriller</Genre>
+    </Book>
+    <Book ID="75">
+      <Title>The Girl on the Train</Title>
+      <Author>Paula Hawkins</Author>
+      <ISBN>9781594634024</ISBN>
+      <PublicationYear>2015</PublicationYear>
+      <Genre>Thriller</Genre>
+    </Book>
+    <Book ID="76">
+      <Title>Gone Girl</Title>
+      <Author>Gillian Flynn</Author>
+      <ISBN>9780307588371</ISBN>
+      <PublicationYear>2012</PublicationYear>
+      <Genre>Thriller</Genre>
+    </Book>
+    <Book ID="77">
+      <Title>The Da Vinci Code</Title>
+      <Author>Dan Brown</Author>
+      <ISBN>9780307474278</ISBN>
+      <PublicationYear>2003</PublicationYear>
+      <Genre>Thriller</Genre>
+    </Book>
+    <Book ID="78">
+      <Title>The Fault in Our Stars</Title>
+      <Author>John Green</Author>
+      <ISBN>9780525478812</ISBN>
+      <PublicationYear>2012</PublicationYear>
+      <Genre>Young Adult</Genre>
+    </Book>
+    <Book ID="79">
+      <Title>Harry Potter and the Sorcerer's Stone</Title>
+      <Author>J.K. Rowling</Author>
+      <ISBN>9780590353427</ISBN>
+      <PublicationYear>1997</PublicationYear>
+      <Genre>Fantasy</Genre>
+    </Book>
+    <Book ID="80">
+      <Title>Ender's Game</Title>
+      <Author>Orson Scott Card</Author>
+      <ISBN>9780812550702</ISBN>
+      <PublicationYear>1985</PublicationYear>
+      <Genre>Science Fiction</Genre>
+    </Book>
+    <Book ID="81">
+      <Title>Neuromancer</Title>
+      <Author>William Gibson</Author>
+      <ISBN>9780441569595</ISBN>
+      <PublicationYear>1984</PublicationYear>
+      <Genre>Cyberpunk</Genre>
+    </Book>
+    <Book ID="82">
+      <Title>Snow Crash</Title>
+      <Author>Neal Stephenson</Author>
+      <ISBN>9780553380958</ISBN>
+      <PublicationYear>1992</PublicationYear>
+      <Genre>Cyberpunk</Genre>
+    </Book>
+    <Book ID="83">
+      <Title>The Three-Body Problem</Title>
+      <Author>Cixin Liu</Author>
+      <ISBN>9780765377067</ISBN>
+      <PublicationYear>2008</PublicationYear>
+      <Genre>Science Fiction</Genre>
+    </Book>
+    <Book ID="84">
+      <Title>Hyperion</Title>
+      <Author>Dan Simmons</Author>
+      <ISBN>9780553283686</ISBN>
+      <PublicationYear>1989</PublicationYear>
+      <Genre>Science Fiction</Genre>
+    </Book>
+    <Book ID="85">
+      <Title>Foundation</Title>
+      <Author>Isaac Asimov</Author>
+      <ISBN>9780553803716</ISBN>
+      <PublicationYear>1951</PublicationYear>
+      <Genre>Science Fiction</Genre>
+    </Book>
+    <Book ID="86">
+      <Title>I, Robot</Title>
+      <Author>Isaac Asimov</Author>
+      <ISBN>9780553382563</ISBN>
+      <PublicationYear>1950</PublicationYear>
+      <Genre>Science Fiction</Genre>
+    </Book>
+    <Book ID="87">
+      <Title>Do Androids Dream of Electric Sheep?</Title>
+      <Author>Philip K. Dick</Author>
+      <ISBN>9780345404473</ISBN>
+      <PublicationYear>1968</PublicationYear>
+      <Genre>Science Fiction</Genre>
+    </Book>
+    <Book ID="88">
+      <Title>A Scanner Darkly</Title>
+      <Author>Philip K. Dick</Author>
+      <ISBN>9780547572178</ISBN>
+      <PublicationYear>1977</PublicationYear>
+      <Genre>Science Fiction</Genre>
+    </Book>
+    <Book ID="89">
+      <Title>The Man in the High Castle</Title>
+      <Author>Philip K. Dick</Author>
+      <ISBN>9780547572482</ISBN>
+      <PublicationYear>1962</PublicationYear>
+      <Genre>Alternate History</Genre>
+    </Book>
+    <Book ID="90">
+      <Title>Watchmen</Title>
+      <Author>Alan Moore</Author>
+      <ISBN>9780930289232</ISBN>
+      <PublicationYear>1987</PublicationYear>
+      <Genre>Graphic Novel</Genre>
+    </Book>
+    <Book ID="91">
+      <Title>V for Vendetta</Title>
+      <Author>Alan Moore</Author>
+      <ISBN>9781401208417</ISBN>
+      <PublicationYear>1988</PublicationYear>
+      <Genre>Graphic Novel</Genre>
+    </Book>
+    <Book ID="92">
+      <Title>Maus</Title>
+      <Author>Art Spiegelman</Author>
+      <ISBN>9780679748403</ISBN>
+      <PublicationYear>1986</PublicationYear>
+      <Genre>Graphic Novel</Genre>
+    </Book>
+    <Book ID="93">
+      <Title>Persepolis</Title>
+      <Author>Marjane Satrapi</Author>
+      <ISBN>9780375714573</ISBN>
+      <PublicationYear>2003</PublicationYear>
+      <Genre>Graphic Novel</Genre>
+    </Book>
+    <Book ID="94">
+      <Title>The Sandman, Vol. 1: Preludes and Nocturnes</Title>
+      <Author>Neil Gaiman</Author>
+      <ISBN>9781401225759</ISBN>
+      <PublicationYear>1989</PublicationYear>
+      <Genre>Graphic Novel</Genre>
+    </Book>
+    <Book ID="95">
+      <Title>Cosmos</Title>
+      <Author>Carl Sagan</Author>
+      <ISBN>9780345539434</ISBN>
+      <PublicationYear>1980</PublicationYear>
+      <Genre>Non-Fiction</Genre>
+    </Book>
+    <Book ID="96">
+      <Title>A Brief History of Time</Title>
+      <Author>Stephen Hawking</Author>
+      <ISBN>9780553380163</ISBN>
+      <PublicationYear>1988</PublicationYear>
+      <Genre>Non-Fiction</Genre>
+    </Book>
+    <Book ID="97">
+      <Title>The Selfish Gene</Title>
+      <Author>Richard Dawkins</Author>
+      <ISBN>9780199291151</ISBN>
+      <PublicationYear>1976</PublicationYear>
+      <Genre>Non-Fiction</Genre>
+    </Book>
+    <Book ID="98">
+      <Title>Guns, Germs, and Steel</Title>
+      <Author>Jared Diamond</Author>
+      <ISBN>9780393317558</ISBN>
+      <PublicationYear>1997</PublicationYear>
+      <Genre>Non-Fiction</Genre>
+    </Book>
+    <Book ID="99">
+      <Title>Thinking, Fast and Slow</Title>
+      <Author>Daniel Kahneman</Author>
+      <ISBN>9780374533557</ISBN>
+      <PublicationYear>2011</PublicationYear>
+      <Genre>Non-Fiction</Genre>
+    </Book>
+    <Book ID="100">
+      <Title>Freakonomics</Title>
+      <Author>Steven D. Levitt</Author>
+      <ISBN>9780060731335</ISBN>
+      <PublicationYear>2005</PublicationYear>
+      <Genre>Non-Fiction</Genre>
+    </Book>
+    <Book ID="101">
+      <Title>Nutuk</Title>
+      <Author>Mustafa Kemal Atatürk</Author>
+      <ISBN>9944888346</ISBN>
+      <PublicationYear>1927</PublicationYear>
+      <Genre>Söylev</Genre>
     </Book>
   </Books>
 </Library>

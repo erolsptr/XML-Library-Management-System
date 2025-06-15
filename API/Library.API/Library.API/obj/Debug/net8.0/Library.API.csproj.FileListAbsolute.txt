@@ -4,6 +4,8 @@ C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\books.xml
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\books.xsd
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\BooksToHtml.xslt
+C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\members.dtd
+C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\members.xml
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\users.xml
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\Library.API.exe
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\Library.API.deps.json
@@ -30,6 +32,7 @@ C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\Library.API.csproj.CoreCompileInputs.cache
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\Library.API.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\Library.API.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\Library.API.sourcelink.json
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\rjimswa.dswa.cache.json
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\rjsmrazor.dswa.cache.json
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\rjsmcshtml.dswa.cache.json
@@ -45,6 +48,4 @@ C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\Library.API.pdb
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\Library.API.genruntimeconfig.cache
 C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\ref\Library.API.dll
-C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\members.dtd
-C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\members.xml
-C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\obj\Debug\net8.0\Library.API.sourcelink.json
+C:\Users\erolm\Desktop\LibraryProject\API\Library.API\Library.API\bin\Debug\net8.0\loans.xml
