@@ -20,4 +20,10 @@
     <MembershipDate>2025-06-15</MembershipDate>
     <Email>wlşegmw@gmail.com</Email>
   </Member>
+  <Member ID="104">
+    <FirstName>Mehmetcan</FirstName>
+    <LastName>Saptır</LastName>
+    <MembershipDate>2025-06-24</MembershipDate>
+    <Email>mcansaptir@gmail.com</Email>
+  </Member>
 </LibraryMembers>
