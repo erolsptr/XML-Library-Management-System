@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\members.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\members.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{924F656A-8076-4B01-87CB-CA304DBC00DF}|..\\..\\Library.Client.WinForms\\Library.Client.WinForms.csproj|c:\\users\\erolm\\desktop\\libraryproject\\library.client.winforms\\mainform.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
@@ -78,10 +82,6 @@
       "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\members.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
-      "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\members.xml||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|c:\\users\\erolm\\desktop\\libraryproject\\api\\library.api\\library.api\\members.dtd||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{656F1ED5-D307-4C15-80C1-DF20B7808221}|Library.API\\Library.API.csproj|solutionrelative:library.api\\members.dtd||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -116,23 +116,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 10,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LoanDetailDto.cs",
-              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\LoanDetailDto.cs",
-              "RelativeDocumentMoniker": "Library.API\\Models\\LoanDetailDto.cs",
-              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\LoanDetailDto.cs",
-              "RelativeToolTip": "Library.API\\Models\\LoanDetailDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-15T00:15:07.25Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainForm.cs [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\MainForm.cs",
@@ -156,7 +144,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "Book.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\Book.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Models\\Book.cs",
@@ -168,7 +156,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "Member.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\Member.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Models\\Member.cs",
@@ -180,7 +168,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MembersController.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Controllers\\MembersController.cs",
               "RelativeDocumentMoniker": "Library.API\\Controllers\\MembersController.cs",
@@ -192,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "MainForm.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\MainForm.cs",
@@ -200,11 +188,12 @@
               "RelativeToolTip": "..\\..\\Library.Client.WinForms\\MainForm.cs",
               "ViewState": "AgIAACEAAAAAAAAAAAAswDkAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-06-12T00:56:52.426Z"
+              "WhenOpened": "2025-06-12T00:56:52.426Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "MainForm.Designer.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\MainForm.Designer.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\MainForm.Designer.cs",
@@ -217,7 +206,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "MemberDetailDto.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\MemberDetailDto.cs",
               "RelativeDocumentMoniker": "Library.API\\Models\\MemberDetailDto.cs",
@@ -229,7 +218,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "LoansController.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Controllers\\LoansController.cs",
               "RelativeDocumentMoniker": "Library.API\\Controllers\\LoansController.cs",
@@ -241,7 +230,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "books.xml",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\books.xml",
               "RelativeDocumentMoniker": "Library.API\\books.xml",
@@ -249,12 +238,36 @@
               "RelativeToolTip": "Library.API\\books.xml",
               "ViewState": "AgIAABUCAAAAAAAAAAAwwFwCAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-06-14T22:14:07.665Z",
+              "WhenOpened": "2025-06-14T22:14:07.665Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "members.xml",
+              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\members.xml",
+              "RelativeDocumentMoniker": "Library.API\\members.xml",
+              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\members.xml",
+              "RelativeToolTip": "Library.API\\members.xml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAALcAAAAKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
+              "WhenOpened": "2025-06-12T13:52:28.653Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 3,
+              "Title": "LoanDetailDto.cs",
+              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\LoanDetailDto.cs",
+              "RelativeDocumentMoniker": "Library.API\\Models\\LoanDetailDto.cs",
+              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\LoanDetailDto.cs",
+              "RelativeToolTip": "Library.API\\Models\\LoanDetailDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-15T00:15:07.25Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
               "Title": "LoanDetailDto.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\LoanDetailDto.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Models\\LoanDetailDto.cs",
@@ -266,7 +279,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "Library.Client.WinForms.csproj",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Library.Client.WinForms.csproj",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Library.Client.WinForms.csproj",
@@ -279,7 +292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "Member.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\Member.cs",
               "RelativeDocumentMoniker": "Library.API\\Models\\Member.cs",
@@ -291,7 +304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "Loan.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Models\\Loan.cs",
               "RelativeDocumentMoniker": "Library.API\\Models\\Loan.cs",
@@ -303,7 +316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "MemberDetailDto.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Models\\MemberDetailDto.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Models\\MemberDetailDto.cs",
@@ -315,7 +328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\Library.Client.WinForms\\Program.cs",
               "RelativeDocumentMoniker": "..\\..\\Library.Client.WinForms\\Program.cs",
@@ -327,7 +340,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "loans.xml",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\loans.xml",
               "RelativeDocumentMoniker": "Library.API\\loans.xml",
@@ -339,7 +352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "BooksController.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Controllers\\BooksController.cs",
               "RelativeDocumentMoniker": "Library.API\\Controllers\\BooksController.cs",
@@ -351,7 +364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Library.API.csproj",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Library.API.csproj",
               "RelativeDocumentMoniker": "Library.API\\Library.API.csproj",
@@ -364,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "launchSettings.json",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "Library.API\\Properties\\launchSettings.json",
@@ -376,7 +389,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "AuthController.cs",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\Controllers\\AuthController.cs",
               "RelativeDocumentMoniker": "Library.API\\Controllers\\AuthController.cs",
@@ -388,18 +401,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "members.xml",
-              "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\members.xml",
-              "RelativeDocumentMoniker": "Library.API\\members.xml",
-              "ToolTip": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\members.xml",
-              "RelativeToolTip": "Library.API\\members.xml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAARAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003576|",
-              "WhenOpened": "2025-06-12T13:52:28.653Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 22,
               "Title": "members.dtd",
               "DocumentMoniker": "C:\\Users\\erolm\\Desktop\\LibraryProject\\API\\Library.API\\Library.API\\members.dtd",
@@ -408,7 +409,8 @@
               "RelativeToolTip": "Library.API\\members.dtd",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003572|",
-              "WhenOpened": "2025-06-12T13:53:38.883Z"
+              "WhenOpened": "2025-06-12T13:53:38.883Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",

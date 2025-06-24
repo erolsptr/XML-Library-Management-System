@@ -32,4 +32,16 @@
     <LoanDate>2025-06-15</LoanDate>
     <ReturnDate>2025-06-15</ReturnDate>
   </Loan>
+  <Loan LoanID="1006">
+    <BookID>79</BookID>
+    <MemberID>103</MemberID>
+    <LoanDate>2025-06-24</LoanDate>
+    <ReturnDate>2025-06-24</ReturnDate>
+  </Loan>
+  <Loan LoanID="1007">
+    <BookID>65</BookID>
+    <MemberID>103</MemberID>
+    <LoanDate>2025-06-24</LoanDate>
+    <ReturnDate></ReturnDate>
+  </Loan>
 </LibraryLoans>
