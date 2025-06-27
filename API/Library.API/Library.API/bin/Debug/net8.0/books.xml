@@ -1,5 +1,4 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!-- Bu dosya kütüphanedeki tüm kitapların verilerini tutar. -->
 <Library>
   <Books>
     <Book ID="1">
@@ -66,18 +65,11 @@
       <Genre>Romance</Genre>
     </Book>
     <Book ID="10">
-      <Title>The Great Gatsby</Title>
+      <Title>The Great Gatsby (Anniversary Edition)</Title>
       <Author>F. Scott Fitzgerald</Author>
       <ISBN>9780743273565</ISBN>
       <PublicationYear>1925</PublicationYear>
-      <Genre>Classic</Genre>
-    </Book>
-    <Book ID="11">
-      <Title>Moby Dick</Title>
-      <Author>Herman Melville</Author>
-      <ISBN>9781503280786</ISBN>
-      <PublicationYear>1851</PublicationYear>
-      <Genre>Adventure</Genre>
+      <Genre>American Classic</Genre>
     </Book>
     <Book ID="12">
       <Title>War and Peace</Title>
@@ -708,6 +700,13 @@
       <ISBN>9944888346</ISBN>
       <PublicationYear>1927</PublicationYear>
       <Genre>Söylev</Genre>
+    </Book>
+    <Book ID="102">
+      <Title>The Martian</Title>
+      <Author>Andy Weir</Author>
+      <ISBN>978-0804139021</ISBN>
+      <PublicationYear>2011</PublicationYear>
+      <Genre>Science Fiction</Genre>
     </Book>
   </Books>
 </Library>

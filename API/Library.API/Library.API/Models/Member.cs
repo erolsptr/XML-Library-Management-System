@@ -15,8 +15,7 @@ namespace Library.API.Models
         public string LastName { get; set; }
 
         [XmlElement("MembershipDate")]
-        public string MembershipDate { get; set; } // Basitlik için string tutalım
-
+        public string? MembershipDate { get; set; }
         [XmlElement("Email")]
         public string Email { get; set; }
     }

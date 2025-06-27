@@ -2,7 +2,6 @@
 <xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform">
   <xsl:output method="html" doctype-public="-//W3C//DTD HTML 4.01//EN" indent="yes"/>
 
-  <!-- Kök element (/) eşleştiğinde bu şablon çalışır -->
   <xsl:template match="/">
     <html>
       <head>
@@ -29,9 +28,7 @@
             </tr>
           </thead>
           <tbody>
-            <!-- Library/Books/Book yolundaki her bir Book elementi için bu kısmı tekrarla -->
             <xsl:for-each select="Library/Books/Book">
-              <!-- Kitapları Başlığa göre alfabetik olarak sırala -->
               <xsl:sort select="Title"/>
               <tr>
                 <td><xsl:value-of select="@ID"/></td>

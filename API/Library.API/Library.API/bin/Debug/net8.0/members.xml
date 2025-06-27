@@ -1,185 +1,190 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE LibraryMembers SYSTEM "members.dtd"[]>
-<!-- Bu dosya kütüphane üyelerinin bilgilerini tutar. -->
 <LibraryMembers>
-	<Member ID="101">
-		<FirstName>Alice</FirstName>
-		<LastName>Johnson</LastName>
-		<MembershipDate>2023-01-15</MembershipDate>
-		<Email>alice.j@example.com</Email>
-	</Member>
-	<Member ID="102">
-		<FirstName>Bob</FirstName>
-		<LastName>Smith</LastName>
-		<MembershipDate>2023-02-20</MembershipDate>
-		<Email>bob.smith@example.com</Email>
-	</Member>
-	<Member ID="103">
-		<FirstName>Charlie</FirstName>
-		<LastName>Brown</LastName>
-		<MembershipDate>2023-03-10</MembershipDate>
-		<Email>charlie.b@example.com</Email>
-	</Member>
-	<Member ID="104">
-		<FirstName>Diana</FirstName>
-		<LastName>Prince</LastName>
-		<MembershipDate>2023-04-05</MembershipDate>
-		<Email>diana.p@example.com</Email>
-	</Member>
-	<Member ID="105">
-		<FirstName>Ethan</FirstName>
-		<LastName>Hunt</LastName>
-		<MembershipDate>2023-05-22</MembershipDate>
-		<Email>ethan.h@example.com</Email>
-	</Member>
-	<Member ID="106">
-		<FirstName>Fiona</FirstName>
-		<LastName>Glenanne</LastName>
-		<MembershipDate>2023-06-18</MembershipDate>
-		<Email>fiona.g@example.com</Email>
-	</Member>
-	<Member ID="107">
-		<FirstName>George</FirstName>
-		<LastName>Costanza</LastName>
-		<MembershipDate>2023-07-01</MembershipDate>
-		<Email>george.c@example.com</Email>
-	</Member>
-	<Member ID="108">
-		<FirstName>Hannah</FirstName>
-		<LastName>Montana</LastName>
-		<MembershipDate>2023-08-11</MembershipDate>
-		<Email>hannah.m@example.com</Email>
-	</Member>
-	<Member ID="109">
-		<FirstName>Ian</FirstName>
-		<LastName>Malcolm</LastName>
-		<MembershipDate>2023-09-02</MembershipDate>
-		<Email>ian.m@example.com</Email>
-	</Member>
-	<Member ID="110">
-		<FirstName>Jessica</FirstName>
-		<LastName>Rabbit</LastName>
-		<MembershipDate>2023-10-25</MembershipDate>
-		<Email>jessica.r@example.com</Email>
-	</Member>
-	<Member ID="111">
-		<FirstName>Kevin</FirstName>
-		<LastName>McCallister</LastName>
-		<MembershipDate>2023-11-12</MembershipDate>
-		<Email>kevin.m@example.com</Email>
-	</Member>
-	<Member ID="112">
-		<FirstName>Laura</FirstName>
-		<LastName>Palmer</LastName>
-		<MembershipDate>2023-12-08</MembershipDate>
-		<Email>laura.p@example.com</Email>
-	</Member>
-	<Member ID="113">
-		<FirstName>Michael</FirstName>
-		<LastName>Scott</LastName>
-		<MembershipDate>2024-01-19</MembershipDate>
-		<Email>michael.s@example.com</Email>
-	</Member>
-	<Member ID="114">
-		<FirstName>Nina</FirstName>
-		<LastName>Sayers</LastName>
-		<MembershipDate>2024-02-14</MembershipDate>
-		<Email>nina.s@example.com</Email>
-	</Member>
-	<Member ID="115">
-		<FirstName>Oscar</FirstName>
-		<LastName>Martinez</LastName>
-		<MembershipDate>2024-03-03</MembershipDate>
-		<Email>oscar.m@example.com</Email>
-	</Member>
-	<Member ID="116">
-		<FirstName>Pamela</FirstName>
-		<LastName>Beesly</LastName>
-		<MembershipDate>2024-04-01</MembershipDate>
-		<Email>pam.b@example.com</Email>
-	</Member>
-	<Member ID="117">
-		<FirstName>Quentin</FirstName>
-		<LastName>Coldwater</LastName>
-		<MembershipDate>2024-05-09</MembershipDate>
-		<Email>quentin.c@example.com</Email>
-	</Member>
-	<Member ID="118">
-		<FirstName>Rachel</FirstName>
-		<LastName>Green</LastName>
-		<MembershipDate>2024-06-07</MembershipDate>
-		<Email>rachel.g@example.com</Email>
-	</Member>
-	<Member ID="119">
-		<FirstName>Steve</FirstName>
-		<LastName>Rogers</LastName>
-		<MembershipDate>2024-07-04</MembershipDate>
-		<Email>steve.r@example.com</Email>
-	</Member>
-	<Member ID="120">
-		<FirstName>Tony</FirstName>
-		<LastName>Stark</LastName>
-		<MembershipDate>2024-08-01</MembershipDate>
-		<Email>tony.s@example.com</Email>
-	</Member>
-	<Member ID="121">
-		<FirstName>Ursula</FirstName>
-		<LastName>Buffay</LastName>
-		<MembershipDate>2024-09-13</MembershipDate>
-		<Email>ursula.b@example.com</Email>
-	</Member>
-	<Member ID="122">
-		<FirstName>Victor</FirstName>
-		<LastName>Frankenstein</LastName>
-		<MembershipDate>2024-10-31</MembershipDate>
-		<Email>victor.f@example.com</Email>
-	</Member>
-	<Member ID="123">
-		<FirstName>Walter</FirstName>
-		<LastName>White</LastName>
-		<MembershipDate>2024-11-20</MembershipDate>
-		<Email>walter.w@example.com</Email>
-	</Member>
-	<Member ID="124">
-		<FirstName>Xena</FirstName>
-		<LastName>Warrior</LastName>
-		<MembershipDate>2024-12-01</MembershipDate>
-		<Email>xena.w@example.com</Email>
-	</Member>
-	<Member ID="125">
-		<FirstName>Yvonne</FirstName>
-		<LastName>Strahovski</LastName>
-		<MembershipDate>2025-01-05</MembershipDate>
-		<Email>yvonne.s@example.com</Email>
-	</Member>
-	<Member ID="126">
-		<FirstName>Zelda</FirstName>
-		<LastName>Spellman</LastName>
-		<MembershipDate>2025-02-16</MembershipDate>
-		<Email>zelda.s@example.com</Email>
-	</Member>
-	<Member ID="127">
-		<FirstName>Arthur</FirstName>
-		<LastName>Dent</LastName>
-		<MembershipDate>2025-03-04</MembershipDate>
-		<Email>arthur.d@example.com</Email>
-	</Member>
-	<Member ID="128">
-		<FirstName>Bilbo</FirstName>
-		<LastName>Baggins</LastName>
-		<MembershipDate>2025-04-02</MembershipDate>
-		<Email>bilbo.b@example.com</Email>
-	</Member>
-	<Member ID="129">
-		<FirstName>Clarice</FirstName>
-		<LastName>Starling</LastName>
-		<MembershipDate>2025-05-01</MembershipDate>
-		<Email>clarice.s@example.com</Email>
-	</Member>
-	<Member ID="130">
-		<FirstName>Deckard</FirstName>
-		<LastName>Shaw</LastName>
-		<MembershipDate>2025-06-01</MembershipDate>
-		<Email>deckard.s@example.com</Email>
-	</Member>
+  <Member ID="101">
+    <FirstName>Alice</FirstName>
+    <LastName>Johnson</LastName>
+    <MembershipDate>2023-01-15</MembershipDate>
+    <Email>alice.j@example.com</Email>
+  </Member>
+  <Member ID="102">
+    <FirstName>Bob</FirstName>
+    <LastName>Smith</LastName>
+    <MembershipDate>2023-02-20</MembershipDate>
+    <Email>bob.smith@example.com</Email>
+  </Member>
+  <Member ID="104">
+    <FirstName>Diana</FirstName>
+    <LastName>Prince</LastName>
+    <MembershipDate>2023-04-05</MembershipDate>
+    <Email>diana.p@example.com</Email>
+  </Member>
+  <Member ID="105">
+    <FirstName>Ethan</FirstName>
+    <LastName>Hunt</LastName>
+    <MembershipDate>2023-05-22</MembershipDate>
+    <Email>ethan.h@example.com</Email>
+  </Member>
+  <Member ID="106">
+    <FirstName>Fiona</FirstName>
+    <LastName>Glenanne</LastName>
+    <MembershipDate>2023-06-18</MembershipDate>
+    <Email>fiona.g@example.com</Email>
+  </Member>
+  <Member ID="107">
+    <FirstName>George</FirstName>
+    <LastName>Costanza</LastName>
+    <MembershipDate>2023-07-01</MembershipDate>
+    <Email>george.c@example.com</Email>
+  </Member>
+  <Member ID="108">
+    <FirstName>Hannah</FirstName>
+    <LastName>Montana</LastName>
+    <MembershipDate>2023-08-11</MembershipDate>
+    <Email>hannah.m@example.com</Email>
+  </Member>
+  <Member ID="109">
+    <FirstName>Ian</FirstName>
+    <LastName>Malcolm</LastName>
+    <MembershipDate>2023-09-02</MembershipDate>
+    <Email>ian.m@example.com</Email>
+  </Member>
+  <Member ID="110">
+    <FirstName>Jessica</FirstName>
+    <LastName>Rabbit</LastName>
+    <MembershipDate>2023-10-25</MembershipDate>
+    <Email>jessica.r@example.com</Email>
+  </Member>
+  <Member ID="111">
+    <FirstName>Kevin</FirstName>
+    <LastName>McCallister</LastName>
+    <MembershipDate>2023-11-12</MembershipDate>
+    <Email>kevin.m@example.com</Email>
+  </Member>
+  <Member ID="112">
+    <FirstName>Laura</FirstName>
+    <LastName>Palmer</LastName>
+    <MembershipDate>2023-12-08</MembershipDate>
+    <Email>laura.p@example.com</Email>
+  </Member>
+  <Member ID="113">
+    <FirstName>Michael</FirstName>
+    <LastName>Scott</LastName>
+    <MembershipDate>2024-01-19</MembershipDate>
+    <Email>michael.s@example.com</Email>
+  </Member>
+  <Member ID="114">
+    <FirstName>Nina</FirstName>
+    <LastName>Sayers</LastName>
+    <MembershipDate>2024-02-14</MembershipDate>
+    <Email>nina.s@example.com</Email>
+  </Member>
+  <Member ID="115">
+    <FirstName>Oscar</FirstName>
+    <LastName>Martinez</LastName>
+    <MembershipDate>2024-03-03</MembershipDate>
+    <Email>oscar.m@example.com</Email>
+  </Member>
+  <Member ID="116">
+    <FirstName>Pamela</FirstName>
+    <LastName>Beesly</LastName>
+    <MembershipDate>2024-04-01</MembershipDate>
+    <Email>pam.b@example.com</Email>
+  </Member>
+  <Member ID="117">
+    <FirstName>Quentin</FirstName>
+    <LastName>Coldwater</LastName>
+    <MembershipDate>2024-05-09</MembershipDate>
+    <Email>quentin.c@example.com</Email>
+  </Member>
+  <Member ID="118">
+    <FirstName>Rachel</FirstName>
+    <LastName>Green</LastName>
+    <MembershipDate>2024-06-07</MembershipDate>
+    <Email>rachel.g@example.com</Email>
+  </Member>
+  <Member ID="119">
+    <FirstName>Steve</FirstName>
+    <LastName>Rogers</LastName>
+    <MembershipDate>2024-07-04</MembershipDate>
+    <Email>steve.r@example.com</Email>
+  </Member>
+  <Member ID="120">
+    <FirstName>Tony</FirstName>
+    <LastName>Stark</LastName>
+    <MembershipDate>2024-08-01</MembershipDate>
+    <Email>tony.s@example.com</Email>
+  </Member>
+  <Member ID="121">
+    <FirstName>Ursula</FirstName>
+    <LastName>Buffay</LastName>
+    <MembershipDate>2024-09-13</MembershipDate>
+    <Email>ursula.b@example.com</Email>
+  </Member>
+  <Member ID="122">
+    <FirstName>Victor</FirstName>
+    <LastName>Frankenstein</LastName>
+    <MembershipDate>2024-10-31</MembershipDate>
+    <Email>victor.f@example.com</Email>
+  </Member>
+  <Member ID="123">
+    <FirstName>Walter</FirstName>
+    <LastName>White</LastName>
+    <MembershipDate>2024-11-20</MembershipDate>
+    <Email>walter.w@example.com</Email>
+  </Member>
+  <Member ID="124">
+    <FirstName>Xena</FirstName>
+    <LastName>Warrior</LastName>
+    <MembershipDate>2024-12-01</MembershipDate>
+    <Email>xena.w@example.com</Email>
+  </Member>
+  <Member ID="125">
+    <FirstName>Yvonne</FirstName>
+    <LastName>Strahovski</LastName>
+    <MembershipDate>2025-01-05</MembershipDate>
+    <Email>yvonne.s@example.com</Email>
+  </Member>
+  <Member ID="126">
+    <FirstName>Zelda</FirstName>
+    <LastName>Spellman</LastName>
+    <MembershipDate>2025-02-16</MembershipDate>
+    <Email>zelda.s@example.com</Email>
+  </Member>
+  <Member ID="127">
+    <FirstName>Arthur</FirstName>
+    <LastName>Dent</LastName>
+    <MembershipDate>2025-03-04</MembershipDate>
+    <Email>arthur.d@example.com</Email>
+  </Member>
+  <Member ID="128">
+    <FirstName>Bilbo</FirstName>
+    <LastName>Baggins</LastName>
+    <MembershipDate>2025-04-02</MembershipDate>
+    <Email>bilbo.b@example.com</Email>
+  </Member>
+  <Member ID="129">
+    <FirstName>Clarice</FirstName>
+    <LastName>Starling</LastName>
+    <MembershipDate>2025-05-01</MembershipDate>
+    <Email>clarice.s@example.com</Email>
+  </Member>
+  <Member ID="130">
+    <FirstName>Deckard</FirstName>
+    <LastName>Shaw</LastName>
+    <MembershipDate>2025-06-01</MembershipDate>
+    <Email>deckard.s@example.com</Email>
+  </Member>
+  <Member ID="131">
+    <FirstName>Deneme</FirstName>
+    <LastName>Dene</LastName>
+    <MembershipDate>2025-06-25</MembershipDate>
+    <Email>deneme@deneme.com</Email>
+  </Member>
+  <Member ID="132">
+    <FirstName>Jane</FirstName>
+    <LastName>Doe</LastName>
+    <MembershipDate>2025-06-25</MembershipDate>
+    <Email>jane.doe@example.com</Email>
+  </Member>
 </LibraryMembers>

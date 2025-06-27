@@ -25,17 +25,14 @@ namespace Library.API.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] UserLogin login)
         {
-            // 1. Kullanıcıyı XML'den bul
             var user = AuthenticateUser(login);
 
             if (user != null)
             {
-                // 2. Eğer kullanıcı varsa, JWT oluştur
                 var token = GenerateJwtToken(user);
                 return Ok(new { token });
             }
 
-            // 3. Kullanıcı yoksa, yetkisiz hatası döndür
             return Unauthorized("Invalid username or password.");
         }
 
@@ -61,7 +58,6 @@ namespace Library.API.Controllers
             }
             catch
             {
-                // Hata durumunda null döndür, loglama yapılabilir.
                 return null;
             }
 
@@ -73,20 +69,19 @@ namespace Library.API.Controllers
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["Jwt:Key"]));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-            // Token'ın içine koyacağımız bilgiler (claims)
             var claims = new[]
             {
-                new Claim(JwtRegisteredClaimNames.Sub, user.Username), // Subject (kullanıcı adı)
-                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()), // Benzersiz Token ID
-                new Claim("id", user.Id.ToString()), // Özel claim: kullanıcı ID'si
-                new Claim(ClaimTypes.Role, user.Role) // Özel claim: kullanıcı rolü
+                new Claim(JwtRegisteredClaimNames.Sub, user.Username), 
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()), 
+                new Claim("id", user.Id.ToString()), 
+                new Claim(ClaimTypes.Role, user.Role)
             };
 
             var token = new JwtSecurityToken(
                 issuer: _configuration["Jwt:Issuer"],
                 audience: _configuration["Jwt:Audience"],
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(120), // Token 2 saat sonra geçersiz olacak
+                expires: DateTime.Now.AddMinutes(120), 
                 signingCredentials: credentials);
 
             return new JwtSecurityTokenHandler().WriteToken(token);

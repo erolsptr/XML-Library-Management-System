@@ -2,16 +2,12 @@
 
 namespace Library.API.Models
 {
-    // Bu attribute, bu sınıfın bir XML elementine karşılık geldiğini belirtir.
-    // İsim olarak "Book" kullanılacak.
     [XmlRoot("Book")]
     public class Book
     {
-        // Bu attribute, bu özelliğin XML'de bir attribute ("ID") olarak serileştirileceğini belirtir.
         [XmlAttribute("ID")]
         public int Id { get; set; }
 
-        // Bu attribute'lar, özelliklerin XML'de element olarak ("Title", "Author" vb.) serileştirileceğini belirtir.
         [XmlElement("Title")]
         public string Title { get; set; }
 

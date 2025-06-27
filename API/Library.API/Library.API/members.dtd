@@ -1,5 +1,4 @@
-﻿<!-- members.xml için DTD (Document Type Definition) -->
-
+﻿
 <!ELEMENT LibraryMembers (Member*)>
 <!ELEMENT Member (FirstName, LastName, MembershipDate, Email)>
 <!ATTLIST Member ID CDATA #REQUIRED>

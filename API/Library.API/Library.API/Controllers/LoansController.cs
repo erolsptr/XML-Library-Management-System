@@ -9,7 +9,7 @@ using System.Xml.Linq;
 
 namespace Library.API.Controllers
 {
-    [Route("api/loans")] // Rota daha basit: /api/loans
+    [Route("api/loans")] 
     [ApiController]
     [Authorize(AuthenticationSchemes = JwtBearerDefaults.AuthenticationScheme)]
     public class LoansController : ControllerBase
@@ -17,44 +17,39 @@ namespace Library.API.Controllers
         private readonly string _loansFilePath = "loans.xml";
         private readonly string _booksFilePath = "books.xml";
 
-        // GET: api/loans
-        // Tüm ödünç alma kayıtlarını, kitap ve üye isimleriyle birlikte listeler.
         [HttpGet]
         public ActionResult<IEnumerable<LoanDetailDto>> GetAllLoans()
         {
             try
             {
-                // Gerekli tüm XML dosyalarını yükle
                 var loansDoc = XDocument.Load(_loansFilePath);
                 var booksDoc = XDocument.Load(_booksFilePath);
                 var membersDoc = XDocument.Load("members.xml");
 
-                // Her bir <Loan> elementi için zenginleştirilmiş bir DTO oluştur
                 var loansWithDetails = loansDoc.Descendants("Loan").Select(l =>
                 {
                     int bookId = (int)l.Element("BookID");
                     int memberId = (int)l.Element("MemberID");
 
-                    // ID'leri kullanarak isimleri ve başlıkları bul
                     string bookTitle = booksDoc.Descendants("Book")
                                            .FirstOrDefault(b => b.Attribute("ID")?.Value == bookId.ToString())
-                                           ?.Element("Title")?.Value ?? "Unknown Book"; // Bulamazsa "Bilinmeyen Kitap" yaz
+                                           ?.Element("Title")?.Value ?? "Unknown Book"; 
 
                     var memberElement = membersDoc.Descendants("Member")
                                            .FirstOrDefault(m => m.Attribute("ID")?.Value == memberId.ToString());
 
                     string memberName = (memberElement != null)
                                            ? $"{memberElement.Element("FirstName")?.Value} {memberElement.Element("LastName")?.Value}"
-                                           : "Unknown Member"; // Bulamazsa "Bilinmeyen Üye" yaz
+                                           : "Unknown Member"; 
 
-                    // LoanDetailDto nesnesini oluştur ve doldur
+                    
                     return new LoanDetailDto
                     {
                         LoanId = (int)l.Attribute("LoanID"),
                         BookId = bookId,
-                        BookTitle = bookTitle,       // <-- Zenginleştirilmiş veri
+                        BookTitle = bookTitle,       
                         MemberId = memberId,
-                        MemberName = memberName,     // <-- Zenginleştirilmiş veri
+                        MemberName = memberName,     
                         LoanDate = l.Element("LoanDate")?.Value,
                         ReturnDate = l.Element("ReturnDate")?.Value
                     };
@@ -68,15 +63,11 @@ namespace Library.API.Controllers
             }
         }
 
-        // POST: api/loans
-        // Yeni bir ödünç alma işlemi yaratır.
-        // Body'de {"bookId": 1, "memberId": 101} gibi bir JSON bekler.
         [HttpPost]
         public IActionResult LoanBook([FromBody] LoanRequest request)
         {
             try
             {
-                // TODO: Kitap ve üyenin var olup olmadığını kontrol et.
                 var membersDoc = XDocument.Load("members.xml");
                 bool memberExists = membersDoc.Descendants("Member")
                                              .Any(m => m.Attribute("ID")?.Value == request.MemberId.ToString());
@@ -94,7 +85,6 @@ namespace Library.API.Controllers
                 {
                     return NotFound(new { Message = $"Book with ID {request.BookId} does not exist." });
                 }
-                // Kitabın daha önce ödünç alınıp geri verilmediğini kontrol et
                 var loansDoc = XDocument.Load(_loansFilePath);
                 bool isAlreadyLoaned = loansDoc.Descendants("Loan")
                     .Any(l => l.Element("BookID")?.Value == request.BookId.ToString() &&
@@ -105,7 +95,6 @@ namespace Library.API.Controllers
                     return Conflict(new { Message = $"Book with ID {request.BookId} is already on loan." });
                 }
 
-                // Yeni LoanID oluştur
                 int maxLoanId = loansDoc.Descendants("Loan").Max(l => (int?)l.Attribute("LoanID")) ?? 1000;
                 int newLoanId = maxLoanId + 1;
 
@@ -127,8 +116,6 @@ namespace Library.API.Controllers
                 return StatusCode(500, $"An error occurred: {ex.Message}");
             }
         }
-        // PUT: api/loans/{loanId}/return
-        // Belirli bir ödünç alma kaydını "iade edildi" olarak işaretler.
         [HttpPut("{loanId}/return")]
         public IActionResult ReturnBook(int loanId)
         {
@@ -136,7 +123,6 @@ namespace Library.API.Controllers
             {
                 var loansDoc = XDocument.Load(_loansFilePath);
 
-                // Güncellenecek olan <Loan> elementini LoanID'ye göre bul
                 var loanElement = loansDoc.Descendants("Loan")
                                           .FirstOrDefault(l => l.Attribute("LoanID")?.Value == loanId.ToString());
 
@@ -145,17 +131,14 @@ namespace Library.API.Controllers
                     return NotFound(new { Message = $"Loan record with ID {loanId} not found." });
                 }
 
-                // ReturnDate alanının zaten dolu olup olmadığını kontrol et
                 var returnDateElement = loanElement.Element("ReturnDate");
                 if (returnDateElement != null && !string.IsNullOrEmpty(returnDateElement.Value))
                 {
                     return BadRequest(new { Message = "This book has already been returned." });
                 }
 
-                // ReturnDate'i o anki tarihle güncelle
                 returnDateElement.Value = DateTime.Now.ToString("yyyy-MM-dd");
 
-                // Değişiklikleri XML dosyasına kaydet
                 loansDoc.Save(_loansFilePath);
 
                 return Ok(new { Message = $"Loan {loanId} has been successfully marked as returned." });
@@ -168,7 +151,6 @@ namespace Library.API.Controllers
     }
 }
 
-// POST isteği için Body'de gelecek veriyi temsil eden basit bir sınıf.
 public class LoanRequest
 {
     public int BookId { get; set; }
